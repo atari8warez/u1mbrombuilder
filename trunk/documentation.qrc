@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/docs">
+        <file>docs/u1mb_rom_builder_v1.html</file>
+        <file>docs/licence.html</file>
+        <file>docs/credits.html</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>U1MB Rom Builder v1</title>
+<style type="text/css">
+.auto-style3 {
+	font-family: Calibri;
+	text-align: center;
+	font-size: xx-large;
+	}
+.auto-style4 {
+	border-width: 0;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #72525A;
+	font-family: Calibri;
+	font-size: x-large;
+}
+.auto-style6 {
+	border: 2px solid #422F34;
+}
+.auto-style8 {
+	border: 0 solid #422F34;
+	text-align: center;
+	font-size: large;
+}
+.auto-style13 {
+	border: 0 solid #422F34;
+	font-family: Calibri;
+}
+.auto-style14 {
+	font-size: x-large;
+	font-family: Calibri;
+}
+.auto-style16 {
+	color: #000000;
+	font-weight: normal;
+	font-family: Calibri;
+}
+.auto-style17 {
+	font-style: normal;
+}
+.auto-style19 {
+	font-weight: normal;
+	font-family: Calibri;
+}
+.auto-style20 {
+	border: 0 solid #422F34;
+	text-align: center;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style21 {
+	border: 0 solid #422F34;
+	text-align: left;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style22 {
+	font-size: large;
+}
+.auto-style23 {
+	border: 0 solid #422F34;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style25 {
+	font-weight: normal;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style26 {
+	border-width: 0;
+	text-align: left;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style27 {
+	border-width: 0;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: x-large;
+}
+.auto-style28 {
+	border: 0 solid #422F34;
+	font-size: large;
+}
+.auto-style29 {
+	border-width: 0;
+	font-family: Calibri;
+	font-size: large;
+}
+.auto-style30 {
+	border-width: 0;
+	text-align: center;
+	font-family: Calibri;
+	font-size: xx-large;
+}
+.auto-style31 {
+	color: #0000FF;
+}
+</style>
+</head>
+
+<body style="background-attachment: fixed">
+
+<p class="auto-style3">&nbsp;</p>
+<table class="auto-style6">
+	<tr>
+		<td class="auto-style29" style="width: 9px;">&nbsp;</td>
+		<td class="auto-style30" colspan="6">U1MB Rom Builder Help</td>
+	</tr>
+	<tr>
+		<td class="auto-style29" style="width: 9px;">&nbsp;</td>
+		<td class="auto-style26" colspan="6">U1MB Rom builder is a tool to create/edit the ROM file 
+used in flashing the AMIC A29040BL Flash Memory chip in the Ultimate 1MB upgrade 
+board. The chip is 512K in size, holds various ROM images used 
+in the operation of the U1MB, and can be customized to fit individual needs. &nbsp;The memory map of the chip is as follows:<br />
+		</td>
+	</tr>
+	<tr>
+		<td class="auto-style27" style="width: 9px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		&nbsp;</td>
+		<td class="auto-style4" colspan="2">HEX Offset</td>
+		<td class="auto-style4" colspan="2">DEC Offset</td>
+		<td class="auto-style4">ROM Description</td>
+		<td class="auto-style4">Size (K)</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="height: 26px; width: 9px"></td>
+		<td class="auto-style20" style="height: 26px">0x0</td>
+		<td class="auto-style20" style="height: 26px;">0x3FFFF</td>
+		<td class="auto-style20" style="height: 26px">0</td>
+		<td class="auto-style20" style="height: 26px">262,143</td>
+		<td class="auto-style23" style="height: 26px">SDX (Spartados X)</td>
+		<td class="auto-style20" style="height: 26px">256</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x40000</td>
+		<td class="auto-style20">0x4FFFF</td>
+		<td class="auto-style20">262,144</td>
+		<td class="auto-style20">327,679</td>
+		<td class="auto-style13"><span class="auto-style22">Reserved</span><sup><span class="auto-style22"> (1)</span></sup></td>
+		<td class="auto-style20">64</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x50000</td>
+		<td class="auto-style20">0x53FFF</td>
+		<td class="auto-style20">327,680</td>
+		<td class="auto-style20">344,063</td>
+		<td class="auto-style23">U1MB Bios</td>
+		<td class="auto-style20">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x54000</td>
+		<td class="auto-style20">0x57FFF</td>
+		<td class="auto-style20">344,064</td>
+		<td class="auto-style20">360,447</td>
+		<td class="auto-style23">Reserved</td>
+		<td class="auto-style20">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x58000</td>
+		<td class="auto-style20">0x5FFFF</td>
+		<td class="auto-style20">360,448</td>
+		<td class="auto-style20">393,215</td>
+		<td class="auto-style13"><span class="auto-style22">Reserved</span><sup><span class="auto-style22"> (2)</span></sup></td>
+		<td class="auto-style20">32</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x60000</td>
+		<td class="auto-style20">0x61FFF</td>
+		<td class="auto-style20">393,216</td>
+		<td class="auto-style20">401,407</td>
+		<td class="auto-style23">BASIC</td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x62000</td>
+		<td class="auto-style20">0x63FFF</td>
+		<td class="auto-style20">401,408</td>
+		<td class="auto-style20">409,599</td>
+		<td class="auto-style23">Cartridge 1</td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x64000</td>
+		<td class="auto-style20">0x65FFF</td>
+		<td class="auto-style20">409,600</td>
+		<td class="auto-style20">417,791</td>
+		<td class="auto-style23">Cartridge 2</td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x66000</td>
+		<td class="auto-style20">0x67FFF</td>
+		<td class="auto-style20">417,792</td>
+		<td class="auto-style20">425,983</td>
+		<td class="auto-style23">Cartridge 3</td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x68000</td>
+		<td class="auto-style20">0x69FFF</td>
+		<td class="auto-style20">425,984</td>
+		<td class="auto-style20">434,175</td>
+		<td class="auto-style13"><span class="auto-style22">XEGS Game 1 </span> <sup>
+		<span class="auto-style22">(3)</span></sup></td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x6A000</td>
+		<td class="auto-style20">0x6BFFF</td>
+		<td class="auto-style20">434,176</td>
+		<td class="auto-style20">442,367</td>
+		<td class="auto-style13"><span class="auto-style22">XEGS Game 2 </span> <sup>
+		<span class="auto-style22">(3)</span></sup></td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x6C000</td>
+		<td class="auto-style20">0x6DFFF</td>
+		<td class="auto-style20">442,368</td>
+		<td class="auto-style20">450,559</td>
+		<td class="auto-style13"><span class="auto-style22">XEGS Game 3 </span> <sup>
+		<span class="auto-style22">(3)</span></sup></td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x6E000</td>
+		<td class="auto-style20">0x6FFFF</td>
+		<td class="auto-style20">450,560</td>
+		<td class="auto-style20">458,751</td>
+		<td class="auto-style13"><span class="auto-style22">XEGS Game 4 </span> <sup>
+		<span class="auto-style22">(3)</span></sup></td>
+		<td class="auto-style20">8</td>
+	</tr>
+	<tr>
+		<td class="auto-style28" style="width: 9px;">&nbsp;</td>
+		<td class="auto-style8">0x70000</td>
+		<td class="auto-style8">0x73FFF</td>
+		<td class="auto-style8">458,752</td>
+		<td class="auto-style8">475,135</td>
+		<td class="auto-style21">OS 1</td>
+		<td class="auto-style8">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x74000</td>
+		<td class="auto-style20">0x77FFF</td>
+		<td class="auto-style20">475,136</td>
+		<td class="auto-style20">491,519</td>
+		<td class="auto-style23">OS 2</td>
+		<td class="auto-style20">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x78000</td>
+		<td class="auto-style20">0x7BFFF</td>
+		<td class="auto-style20">491,520</td>
+		<td class="auto-style20">507903</td>
+		<td class="auto-style23">OS 3</td>
+		<td class="auto-style20">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style20">0x7C000</td>
+		<td class="auto-style20">0x7FFFF</td>
+		<td class="auto-style20">507,904</td>
+		<td class="auto-style20">524,287</td>
+		<td class="auto-style13"><span class="auto-style22">OS 4 </span> <sup>
+		<span class="auto-style22">(3)</span></sup></td>
+		<td class="auto-style20">16</td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style21" colspan="6"><sup><span class="auto-style22">
+		<br />
+		(1) </span> </sup><span class="auto-style22">This ROM slot is defined as 
+		being part of a vacant SDX area in the official U1MB documentation. GUI 
+		is one of the possible uses for this vacant ROM space.</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style21" colspan="6"><sup><span class="auto-style22">
+		<br />
+&nbsp;(2) </span> </sup><span class="auto-style22">This ROM slot is defined as 
+		reserved in the official U1MB documentation.&nbsp; PBI is one of the 
+		possible uses for this vacant ROM space.</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style21" colspan="6"><sup><span class="auto-style22">
+		<br />
+		(3) </span> </sup><span class="auto-style22">P3 jumper on the U1MB 
+		board must be ON for XEGS mode and OS 4 slot must be loaded with XEGS OS 
+		Rom.<br />
+		<br />
+		</span></td>
+	</tr>
+	<tr>
+		<td class="auto-style23" style="width: 9px">&nbsp;</td>
+		<td class="auto-style21" colspan="6">
+		<p class="auto-style14"><strong>How to use U1MB Rom Builder</strong></p>
+		<p class="auto-style25">You can use the ROM builder to create a new U1MB 
+		ROM or modify an existing one. </p>
+		<p class="auto-style25"><em><strong>To create a new U1MB Rom file </strong></em>&nbsp;simply start the program. 
+		U1MB Rom Builder will start with a base template ROM already loaded. or 
+		if you are already in the program click on the menu item <em>(or button)
+		</em>File/New U1MB to start with a new base ROM. The template used is 
+		based on the default U1MB Rom that was loaded into the device at the 
+		time of the shipment. </p>
+		<p class="auto-style25">A new U1MB Rom will be indicated with 
+		"untitled.rom" next to the main Window title on the titlebar. You can 
+		now customize the base Rom by loading your choice of individual Rom 
+		files by clicking on the ROM NAME and then clicking on the Load Rom 
+		button at the bottom of the screen.</p>
+		<p class="auto-style25">Note that when you load a U1MB Bios Rom, the 
+		program will ask you whether you want to override the descriptions that 
+		are currently on the screen with the descriptions from the Bios Rom <em>(Bios 
+		Rom is where all descriptions are stored, see the Technical Note at the 
+		end of this help page for more information). </em>If you answer yes, all 
+		descriptions for BASIC, Game and OS Rom slots will be overriden by the 
+		descriptions from the Bios Rom file, otherwise the current&nbsp; descriptions will 
+		be preserved and saved when you save the 
+		U1MB Rom file or the Bios Rom file <em>(using Extract Rom button)</em></p>
+		<p class="auto-style25">Also note that, there are 3 rom slots defined as 
+		Reserved. According to the currently available U1MB documentation these 
+		empty slots are reserved for future use, also all U1MB devices so far 
+		came with those slots empty. U1MB Rom Builder will allow you to rename 
+		those slots and save those definitions permanently should you choose to 
+		do so. </p>
+		<p class="auto-style25">For example, you can rename the slot called 
+		RSVD1 (64K) to GUI (64K), or RSVD3 (32K) to PBI (32K) and assign a short 
+		(14 characters) description to them like "G.U.Interface", or 
+		"P.B.Interface". To do so, simply double-click on the RSVD1 (64K) item 
+		to enable it for input, enter a name of your choice and press ENTER, the 
+		description field for that slot will then be enabled for input, you can 
+		now enter your description. The information you entered will be saved 
+		and made permenant <em>(until you choose to change it again). </em>Only 
+		RSVD1, RSVD2 and RSVD3 slots can be modified this way. Also remember 
+		that these changes will have no effect on the actual contents of the 
+		U1MB Rom or on the U1MB Setup Menu, they are to customize the Rom 
+		Builder UI so that the reserved slots have meaningful names when they 
+		are actually used.</p>
+		<p class="auto-style19"><span class="auto-style22"><em><strong>To modify 
+		an existing U1MB Rom file</strong></em>, start the program and load a 
+		valid U1MB Rom file by clicking on the File/Load U1MB Rom menu item or button<em>.</em><em class="auto-style17">
+		</em></span><span class="auto-style22">Once the U1MB Rom is loaded the 
+		Rom name will be shown next to the Main Window title, you can then 
+		select to update individual Rom files within it. </span></p>
+		<ul>
+			<li>
+			<p class="auto-style19"><span class="auto-style22"><em><strong>To update 
+		an individual Rom file,</strong></em>&nbsp; select the Rom Name by clicking 
+		the appropriate name on the name column and click the LOAD Rom button 
+		under the Description column. You can also change the description of the 
+		Rom if you wish. Once you are finished updating individual Rom files 
+		click on the File/Save U1MB menu item or button  
+		to save the updated U1MB Rom.</span></p>
+			</li>
+			<li>
+			<p class="auto-style25"><em><strong>To save an individual Rom file</strong></em> 
+		from within an U1MB Rom select a Rom Name from the ROM NAME column and 
+		click the Extract Rom button under the DESCRIPTION column. </p>
+			</li>
+		</ul>
+		<p class="auto-style25"><em><strong>To make an ATR file</strong></em> 
+		containing the U1MB Rom and the flasher software click on the File/Make 
+		ATR menu item or button <span class="auto-style22"> 
+		. The ATR file is used to flash the Rom of U1MB using your Atari 
+		computer.</span></p>
+		<p class="auto-style16"><strong><span class="auto-style22"><em>Technical 
+		note on ROM description strings:</em></span></strong><span class="auto-style22"> Individual Rom 
+		Descriptions and Description Headers are stored in the U1MB BIOS Rom.
+		</span>For example, the line for the BASIC slot on Ultimate 1MB Setup screen 
+		has two parts:</p>
+		<table cellspacing="1">
+			<tr>
+				<th>Description Header</th>
+				<th>&nbsp;</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>BASIC Slot is:</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+				<td class="auto-style31">BASIC</td>
+			</tr>
+			<tr>
+				<td>BASIC Slot is:</td>
+				<td>&nbsp;</td>
+				<td class="auto-style31">CAR1</td>
+			</tr>
+			<tr>
+				<td>BASIC Slot is: </td>
+				<td>&nbsp;</td>
+				<td class="auto-style31">CAR2</td>
+			</tr>
+			<tr>
+				<td>BASIC Slot is:</td>
+				<td>&nbsp;</td>
+				<td class="auto-style31">CAR3</td>
+			</tr>
+		</table>
+		<p class="auto-style16">Above lines <em>(each having a total of 32 
+		bytes = 18 chrs Header + 14 chrs Description) </em>are all stored in the U1MB BIOS Rom, 
+		note that the Description Header for each slot is the same, so when the user presses the 
+		right or left arrow key in the Ultimate Setup screen, the whole screen 
+		line <em>(all 32 characters, not just the Description)</em> change, but since you have the same 
+		Description Header for each Basic slot you only see a change in the 
+		Description itself <em>(last 14 Characters)</em>.</p>
+		<p class="auto-style16">U1MB Rom builder will only allow you to change 
+		the Description part of the string. So 
+		the maximum number of characters that can be used is 14.
+		<span class="auto-style22">Spaces count as part of the description
+		</span>and are stored in the U1MB Bios Rom file.
+		<span class="auto-style22">Those are the characters which actually 
+		describe the ROM. Some Rom Generating programs may allow you to change the Description 
+		Header as well as the Description<em>. </em>In my opinion it's best to 
+		keep the description headers untouched to ensure a consistant presentation on 
+		the U1MB setup screen.</span></p>
+		</td>
+	</tr>
+</table>
+
+<p class="auto-style14">&nbsp;</p>
+<p class="auto-style16">&nbsp;</p>
+<p class="auto-style16">&nbsp;</p>
+
+</body>
+
+</html>

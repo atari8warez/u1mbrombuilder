@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/U1MBRomB2.ico</file>
+        <file>images/U1MBRomB.ico</file>
+        <file>images/fileopen.png</file>
+        <file>images/filesave.png</file>
+        <file>images/help_contents.png</file>
+    </qresource>
+</RCC>
