@@ -12,6 +12,7 @@
 #include <QUrl>
 #include <QString>
 #include <QChar>
+#include <QDialog>
 #include <iostream>
 
 U1MBRomBSettings *u1mbrombSettings;
@@ -28,6 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
     /* Set application properties */
     QCoreApplication::setOrganizationName("atari8warez.com");
     QCoreApplication::setApplicationName("U1MBRomB");
+    u1mbrombPath = QCoreApplication::applicationDirPath();
 
     u1mbrombSettings = new U1MBRomBSettings();
 
@@ -38,22 +40,43 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     /* Setup the lookup array */
-    lookupI = " ! #$%&'()*+,-./           0123456789:;<=>?abcdefghijklmnopqrstuvwxyz";
-    lookupA = " ABCDEFGHIJKLMNO0123456789-PQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz";
+    lookupI = " ! #$%&'()*+,-./          0123456789:;<=>?abcdefghijklmnopqrstuvwxyz                      ";
+    lookupA = " ABCDEFGHIJKLMNO0123456789PQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz!\"#$%&'()*+,-./:;<=>?@";
 
     lookupI[0] = '\0';
     lookupI[2] = '\"';
-    lookupI[16] = '\x10';
-    lookupI[17] = '\x11';
-    lookupI[18] = '\x12';
-    lookupI[19] = '\x13';
-    lookupI[20] = '\x14';
-    lookupI[21] = '\x15';
-    lookupI[22] = '\x16';
-    lookupI[23] = '\x17';
-    lookupI[24] = '\x18';
-    lookupI[25] = '\x19';
-    lookupI[26] = '\x0D';
+    lookupI[16] = '\x10';  // 0
+    lookupI[17] = '\x11';  // 1
+    lookupI[18] = '\x12';  // 2
+    lookupI[19] = '\x13';  // 3
+    lookupI[20] = '\x14';  // 4
+    lookupI[21] = '\x15';  // 5
+    lookupI[22] = '\x16';  // 6
+    lookupI[23] = '\x17';  // 7
+    lookupI[24] = '\x18';  // 8
+    lookupI[25] = '\x19';  // 9
+    lookupI[68] = '\x01';  // !
+    lookupI[69] = '\x02';  // "
+    lookupI[70] = '\x03';  // #
+    lookupI[71] = '\x04';  // $
+    lookupI[72] = '\x05';  // %
+    lookupI[73] = '\x06';  // &
+    lookupI[74] = '\x07';  // '
+    lookupI[75] = '\x08';  // (
+    lookupI[76] = '\x09';  // )
+    lookupI[77] = '\x0A';  // *
+    lookupI[78] = '\x0B';  // +
+    lookupI[79] = '\x0C';  // ,
+    lookupI[80] = '\x0D';  // -
+    lookupI[81] = '\x0E';  // .
+    lookupI[82] = '\x0F';  // /
+    lookupI[83] = '\x1A';  // :
+    lookupI[84] = '\x1B';  // ;
+    lookupI[85] = '\x1C';  // <
+    lookupI[86] = '\x1D';  // =
+    lookupI[87] = '\x1E';  // >
+    lookupI[88] = '\x1F';  // ?
+    lookupI[89] = '\x20';  // @
 
     /* Set Rom Sizes */
     U1MBSize = 524288;
@@ -90,6 +113,7 @@ MainWindow::MainWindow(QWidget *parent) :
     itemOS4 = ui->treeWidget->topLevelItem(13)->child(3);
     itemALL = ui->treeWidget->topLevelItem(14);
     ui->treeWidget->setCurrentItem(itemALL);
+    ui->treeWidget->setHeaderLabel("");
 
     itemRSVD1->setText(0, u1mbrombSettings->RSVD1Name());
     ui->descRSVD1->setText(u1mbrombSettings->RSVD1Desc());
@@ -101,8 +125,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->descRSVD3->setText(u1mbrombSettings->RSVD3Desc());
     ui->descRSVD3->setEnabled(false);
 
-    // Set Main Window Positions
+    // Set Main Window Positions and background style
     mainWindow->setGeometry(u1mbrombSettings->lastHorizontalPos(),u1mbrombSettings->lastVerticalPos(),u1mbrombSettings->lastWidth(),u1mbrombSettings->lastHeight());
+    ui->mwFrame->setStyleSheet(u1mbrombSettings->backColor(false, 0));
+
 
     // Connect all UI Signals
     trayIcon.setIcon(windowIcon());
@@ -274,6 +300,7 @@ QString MainWindow::getDescs(int offset)
     while (desc.endsWith(' ')) desc.chop(1);
     return desc;
 }
+// Function to put rom slot descriptions to the U1MB and/or BIOS Rom
 void MainWindow::putDescs(QString desc, int offset)
 {
     int j=0;
@@ -512,19 +539,19 @@ void MainWindow::loadRom(QString romDir, QString romName, QString type, int romS
              if(type == "RSVD2") RSVD2data = romData;
              if(type == "RSVD3") RSVD3data = romData;
              if(type == "BIOS") {
-                 if (!(romData[8192] == '\x025' && romData[8224] == '\x025' && romData[8256] == '\x025')) {
+                 if (!(romData[8192] == '\x025' && romData[8224] == '\x025' && romData[8256] == '\x025' && romData[8448] == '\x033')) {
                      QMessageBox::critical(this, tr("Rom file content error"), tr("BIOS rom file you are trying to open does not have the expected data content."),
                                            QMessageBox::Ok);
                      return;
                  }
                  BIOSdata = romData;
-                 QString msg = "You are loading a new BIOS ";
-                 msg += "Rom into U1MB. Current descriptions for BASIC, GAME and OS ";
-                 msg += "slots will be overridden by the descriptions from the BIOS ";
-                 msg += "Rom you are loading.\n\n";
-                 msg += "Click YES to override, NO to keep the current descriptions. ";
+                 QString msg = tr("You are loading a new BIOS ");
+                 msg += tr("Rom into U1MB. Current descriptions for BASIC, GAME and OS ");
+                 msg += tr("slots will be overridden by the descriptions from the BIOS ");
+                 msg += tr("Rom you are loading.\n\n");
+                 msg += tr("Click YES to override, NO to keep the current descriptions. ");
 
-                 int answer = QMessageBox::question(this, "Confirmation needed...", msg,
+                 int answer = QMessageBox::question(this, tr("Confirmation needed..."), msg,
                       QMessageBox::Yes, QMessageBox::No);
                  if (answer == QMessageBox::Yes) {
                      mainWindow->populateDescs(8338);
@@ -558,7 +585,7 @@ void MainWindow::saveRom(QString romDir, QString romName, QString type)
 {
     QFile file(romDir + "/" + romName);
     if (!file.open(QIODevice::WriteOnly)) {
-        QMessageBox::information(this, tr("Unable to open file"), file.errorString());
+        QMessageBox::critical(this, tr("Unable to open file"), file.errorString());
         return;
     }
 
@@ -567,24 +594,7 @@ void MainWindow::saveRom(QString romDir, QString romName, QString type)
         mainWindow->updateDescs(8338);
 
         /* Reassemble U1MB Rom */
-        romData = SDXdata;
-        romData.append(RSVD1data);
-        romData.append(BIOSdata);
-        romData.append(RSVD2data);
-        romData.append(RSVD3data);
-        romData.append(BAS1data);
-        romData.append(BAS2data);
-        romData.append(BAS3data);
-        romData.append(BAS4data);
-        romData.append(XEGS1data);
-        romData.append(XEGS2data);
-        romData.append(XEGS3data);
-        romData.append(XEGS4data);
-        romData.append(OS1data);
-        romData.append(OS2data);
-        romData.append(OS3data);
-        romData.append(OS4data);
-
+        mainWindow->reassembleRom();
         U1MBRomFile = QFileInfo(file).fileName();
         U1MBRomFilePath = QFileInfo(file).absolutePath();
         appWindowTitle = u1mbrombSettings->mainWindowTitle() + (" -- ") + U1MBRomFile;
@@ -684,7 +694,140 @@ bool MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionMakeATR_triggered()
 {
+    // Build the ATR image
+    QByteArray atrData, flasherData;
 
+    QFile file(u1mbrombPath + "/u1m.dat");
+     if (!file.open(QIODevice::ReadOnly)) {
+         QMessageBox::critical(this, tr("Missing application component!"),
+            tr("The following file is missing from the application's installation directory: ") + file.fileName(),
+           QMessageBox::Ok);
+         return;
+     }
+     atrData = file.readAll();
+     file.close();
+
+     QString dir = u1mbrombSettings->defRomDir();
+     QString fileName = QFileDialog::getOpenFileName(this, tr("Select the flasher executable"), dir,
+                          tr("Atari Executable Files (*.com *.exe *.xex);;" "All Files (*)"));
+     if (fileName.isEmpty()) {
+         return;
+     }
+     if(u1mbrombSettings->useLast()) u1mbrombSettings->setdefRomDir(QFileInfo(fileName).absolutePath());
+     file.setFileName(fileName);
+     if(!file.open(QIODevice::ReadOnly)) {
+         QMessageBox::critical(this, tr("Error Opening File"), file.errorString() + " " + fileName,
+           QMessageBox::Ok);
+         return;
+     }
+     if (file.size() > 8192) {
+         QMessageBox::critical(this, tr("Flasher file size error"), tr("Flasher file size cannot be > 8K (8192 bytes)"),
+           QMessageBox::Ok);
+         return;
+     }
+     flasherData = file.readAll();
+     file.close();
+
+     // Check for valid executable
+     if (flasherData.at(0) != '\xFF' || flasherData.at(1) != '\xFF') {
+         QMessageBox::critical(this, tr("Invalid Executable"), fileName + tr("  is not a valid ATARI executable"),
+           QMessageBox::Ok);
+         return;
+     }
+     // Update the size of the file
+
+     int loByte, hiByte, sectors, offset;
+     hiByte = file.size() / 256;
+     loByte = file.size() % 256;
+
+     offset = 1194;
+     atrData[offset] = loByte;
+     atrData[offset+1] = hiByte;
+
+     // Determine how many sectors (256 bytes each) does the flasher occupy (max flasher size is 8192 bytes)
+     // We will only need one Sector Map Sector at sector 32
+     sectors = hiByte;
+     if (loByte != 0) sectors += 1;
+
+     // Initialize and fill-in the Sector Map Sectors for the flasher
+     offset = 7568;
+     for (int i=0; i<256; i++) atrData[offset+i] = '\x00';
+     offset = 7572;
+     int smEntries = sectors;
+     int j = 0;
+     int nextDataSect = 33;
+     for (int i=0; i<smEntries; i++ ){
+         atrData[offset+j] = nextDataSect+i;
+         atrData[offset+j+1] = '\x00';
+         j += 2;
+     }
+     // Insert flasher file data
+     offset = 7824;
+     for (int i=0; i<8192; i++) atrData[offset+i] = '\x00';
+     atrData.replace(offset, flasherData.size(), flasherData);
+
+     // U1MB Rom will occupy 2048 sectors (256 bytes each), and we'll need 17 sector map sectors (65-81)
+     // U1MB Rom data will start from sector 82
+     int smSectors = 17;
+     int dataSectors = 2048;
+     int totalEntries = 0;
+     int nextSmSect = 66;
+     int prevSmSect = 0;
+     nextDataSect = 82;
+     offset = 16016;
+     smEntries = 126;
+
+     // Fill-in Sector Map Sectors starting from sector 65
+     // For all SMS
+     for (int i=0; i<4352; i++) atrData[offset+i] = '\x00';
+     for (int i=0; i<smSectors; i++) {
+         atrData[offset] = nextSmSect;
+         atrData[offset+2] = prevSmSect;
+         offset += 4;
+         int j = 0;
+         // For each SMS
+         for (int k=0; k<smEntries; k++ ){
+             hiByte = nextDataSect / 256;
+             loByte = nextDataSect % 256;
+             atrData[offset+j] = loByte;
+             atrData[offset+j+1] = hiByte;
+             j += 2;
+             nextDataSect += 1;
+             totalEntries += 1;
+             if (totalEntries == dataSectors) break;
+         }
+         if (totalEntries == dataSectors) break;
+         prevSmSect = nextSmSect - 1;
+         nextSmSect +=1;
+         offset += 252;
+      }
+     // Update next SMS # info on the last SMS sector to zero to indicate end-of-chain
+     offset -= 4;
+     atrData[offset] = '\x00';
+     atrData[offset+1] = '\x00';
+
+     // Insert U1MB Rom data
+     offset += 256;
+     mainWindow->reassembleRom();
+     atrData.insert(offset, romData);
+
+     // Write the .atr file
+     dir = u1mbrombSettings->defRomDir();
+     fileName = QFileDialog::getSaveFileName(this, tr("Save ATR as"), dir + "/U1MFlash", tr("Atari Disk Image Files  (*.atr);;" "All files (*)"));
+     if (fileName.isEmpty()) {
+         return;
+     }
+     if(u1mbrombSettings->useLast()) u1mbrombSettings->setdefRomDir(QFileInfo(fileName).absolutePath());
+     QFile atrfile(fileName);
+     if (!atrfile.open(QIODevice::WriteOnly)) {
+         QMessageBox::critical(this, tr("Unable to open file"), atrfile.errorString());
+         return;
+     }
+     offset = atrData.size()+1;
+     for (int i=offset; i<736912; i++) atrData.insert(i, '\x00');
+     atrfile.write(atrData);
+     atrData.clear();
+     romData.clear();
 }
 
 void MainWindow::on_actionExit_triggered()
@@ -696,6 +839,10 @@ void MainWindow::on_actionOptions_triggered()
 {
     OptionsDialog optionsDialog(this);
     optionsDialog.exec() ;
+
+    if (optionsDialog.result() == optionsDialog.Accepted){
+        ui->mwFrame->setStyleSheet(u1mbrombSettings->backColor(false, 0));
+    }
 
     loadTranslators();
     ui->retranslateUi(this);
@@ -725,7 +872,7 @@ void MainWindow::on_actionCredits_triggered()
 void MainWindow::on_actionLoadROM_triggered()
 {
     QString rom;
-    int size;
+    int size = 0;
 
     if (itemSDX->isSelected()) {
         rom = "SDX";
@@ -1130,6 +1277,26 @@ void MainWindow::resetRomFileName()
     OS3RomFile = "";
     OS4RomFile = "";
 }
+void MainWindow::reassembleRom()
+{
+    romData = SDXdata;
+    romData.append(RSVD1data);
+    romData.append(BIOSdata);
+    romData.append(RSVD2data);
+    romData.append(RSVD3data);
+    romData.append(BAS1data);
+    romData.append(BAS2data);
+    romData.append(BAS3data);
+    romData.append(BAS4data);
+    romData.append(XEGS1data);
+    romData.append(XEGS2data);
+    romData.append(XEGS3data);
+    romData.append(XEGS4data);
+    romData.append(OS1data);
+    romData.append(OS2data);
+    romData.append(OS3data);
+    romData.append(OS4data);
+}
 
 void MainWindow::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
@@ -1297,3 +1464,4 @@ void MainWindow::on_treeWidget_itemClicked(QTreeWidgetItem* item, int /*column*/
 {
 
 }
+

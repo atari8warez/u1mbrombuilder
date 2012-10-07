@@ -33,6 +33,7 @@ private slots:
     void check_UseDef();
     void check_UseLast();
     void check_UseNone();
+    void previewBackColor();
 };
 
 #endif // OPTIONSDIALOG_H

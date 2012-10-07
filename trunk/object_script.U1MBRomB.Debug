@@ -5,7 +5,7 @@ INPUT(
 ./debug\u1mbrombsettings.o
 ./debug\optionsdialog.o
 ./debug\helpdialog.o
-./debug\creditsdiaalog.o
+./debug\creditsdialog.o
 ./debug\moc_mainwindow.o
 ./debug\moc_aboutdialog.o
 ./debug\moc_optionsdialog.o

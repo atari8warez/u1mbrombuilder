@@ -45,6 +45,7 @@ U1MBRomBSettings::U1MBRomBSettings()
     mI18nLanguage = mSettings->value("I18nLanguage", "auto").toString();
     mMinimizeToTray = mSettings->value("MinimizeToTray", false).toBool();
     mSaveWindowsPos = mSettings->value("SaveWindowsPosSize", true).toBool();
+    mBackColor = mSettings->value("backColor", 0).toInt();
 }
 
 U1MBRomBSettings::~U1MBRomBSettings()
@@ -115,7 +116,7 @@ QString U1MBRomBSettings::defBaseRomDir()
 void U1MBRomBSettings::setdefBaseRomDir(const QString &dir)
 {
     mDefBaseRomDir = dir;
-    mSettings->setValue("defRomDir", mDefBaseRomDir);
+    mSettings->setValue("defBaseRomDir", mDefBaseRomDir);
 }
 
 QString U1MBRomBSettings::defRomDir()
@@ -256,6 +257,42 @@ void U1MBRomBSettings::setI18nLanguage(const QString &lang)
 {
     mI18nLanguage = lang;
     mSettings->setValue("I18nLanguage", mI18nLanguage);
+}
+
+QString U1MBRomBSettings::backColor(bool preview, int index)
+{
+    int colorIndex;
+    if (preview) {
+        colorIndex = index;
+    } else {
+        colorIndex = mBackColor;
+    }
+    switch (colorIndex) {
+
+    case 0:
+        mStyle = "background-color: qlineargradient(spread:repeat, x1:0, y1:0.267, x2:1, y2:0.261, stop:0 rgba(59, 48, 47, 255), stop:1 rgba(255, 255, 255, 255))" ;
+        break;
+
+    case 1:
+        mStyle = "background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(70, 38, 42, 0), stop:0.113636 rgba(65, 40, 51, 69), stop:0.363636 rgba(176, 108, 139, 145), stop:0.448864 rgba(65, 40, 51, 208), stop:0.477581 rgba(65, 40, 51, 130), stop:0.518717 rgba(65, 40, 51, 130), stop:0.55 rgba(65, 40, 51, 255), stop:0.664773 rgba(122, 75, 96, 130), stop:1 rgba(72, 36, 0, 69))";
+        break;
+
+    case 2:
+        mStyle = "background-color: qconicalgradient(cx:0.642, cy:0, angle:0, stop:0.147727 rgba(0, 0, 0, 255), stop:0.397727 rgba(138, 138, 138, 255), stop:0.443182 rgba(255, 255, 255, 255), stop:0.522727 rgba(75, 75, 75, 255), stop:0.568182 rgba(180, 180, 180, 255), stop:0.6875 rgba(147, 147, 147, 255), stop:0.823864 rgba(80, 80, 80, 255))";
+        break;
+    }
+    return mStyle;
+}
+
+int U1MBRomBSettings::backColorIndex()
+{
+    return mBackColor;
+}
+
+void U1MBRomBSettings::setBackColor(int colorIndex)
+{
+    mBackColor = colorIndex;
+    mSettings->setValue("backColor", mBackColor);
 }
 
 bool U1MBRomBSettings::minimizeToTray()

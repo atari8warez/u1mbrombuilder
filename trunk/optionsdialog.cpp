@@ -1,10 +1,12 @@
 #include "optionsdialog.h"
 #include "ui_optionsdialog.h"
-
 #include "u1mbrombsettings.h"
+#include "mainwindow.h"
 #include <QTranslator>
 #include <QDir>
 #include <QFile>
+#include <QMessageBox>
+
 
 OptionsDialog *optionsDialog;
 
@@ -30,6 +32,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     connect(m_ui->useDefault, SIGNAL(stateChanged(int)), this, SLOT(check_UseDef()));
     connect(m_ui->useLast, SIGNAL(stateChanged(int)), this, SLOT(check_UseLast()));
     connect(m_ui->useNone, SIGNAL(stateChanged(int)), this, SLOT(check_UseNone()));
+    connect (m_ui->backcolorCombo, SIGNAL(currentIndexChanged(QString)), this, SLOT(previewBackColor()));
 
     /* Retrieve application settings */
     m_ui->minimizeToTrayBox->setChecked(u1mbrombSettings->minimizeToTray());
@@ -40,12 +43,11 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     m_ui->useDefault->setChecked(u1mbrombSettings->useDef());
     m_ui->useLast->setChecked(u1mbrombSettings->useLast());
     m_ui->useNone->setChecked(u1mbrombSettings->useNone());
+    m_ui->backcolorCombo->setCurrentIndex(u1mbrombSettings->backColorIndex());
 
-
-        optionsDialog->check_UseDef();
-        optionsDialog->check_UseLast();
-        optionsDialog->check_UseNone();
-
+    optionsDialog->check_UseDef();
+    optionsDialog->check_UseLast();
+    optionsDialog->check_UseNone();
 
     /* list available translations */
     QTranslator local_translator;
@@ -97,6 +99,7 @@ void OptionsDialog::OptionsDialog_accepted()
     u1mbrombSettings->setUseDef(m_ui->useDefault->isChecked());
     u1mbrombSettings->setUseLast(m_ui->useLast->isChecked());
     u1mbrombSettings->setUseNone(m_ui->useNone->isChecked());
+    u1mbrombSettings->setBackColor(m_ui->backcolorCombo->currentIndex()); ;
 
 }
 
@@ -156,4 +159,9 @@ void OptionsDialog::browsePath()
     } else {
         m_ui->defRomDirName->setText(fileName);
     }
+}
+
+void OptionsDialog::previewBackColor()
+{
+    OptionsDialog::setStyleSheet(u1mbrombSettings->backColor(true, m_ui->backcolorCombo->currentIndex()));
 }

@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-    int ret;
+    int ret=0;
 
     QApplication a(argc, argv);
     QTextCodec::setCodecForTr(QTextCodec::codecForName("utf8"));

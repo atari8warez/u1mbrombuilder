@@ -19,6 +19,5 @@ protected:
 private:
     Ui::CreditsDialog *m_ui;
 
-//private slots:
 };
 #endif // CREDITSDIALOG_H

@@ -69,10 +69,13 @@ public:
 
     void setI18nLanguage(const QString &$lang);
 
+    QString backColor (bool preview, int index);
+    int backColorIndex();
+    void setBackColor(int colorIndex);
+
     bool minimizeToTray();
     void setMinimizeToTray(bool tray);
 
-    // Save window positions and sizes option
     bool saveWindowsPos();
     void setSaveWindowsPos(bool saveMwp);
 
@@ -90,6 +93,7 @@ private:
     int mMainY;
     int mMainW;
     int mMainH;
+    int mBackColor;
 
     QString mMainWindowTitle;
     QString mDefRomDir;
@@ -102,7 +106,7 @@ private:
     QString mRSVD1Desc;
     QString mRSVD2Desc;
     QString mRSVD3Desc;
-
+    QString mStyle;
 
 };
 
