@@ -16,7 +16,7 @@ SOURCES += main.cpp \
     u1mbrombsettings.cpp \
     optionsdialog.cpp \
     helpdialog.cpp \
-    creditsdiaalog.cpp
+    creditsdialog.cpp
 
 win32:LIBS += -lwinmm
 unix:LIBS += -lz
@@ -43,12 +43,16 @@ RESOURCES += \
     documentation.qrc
 
 TRANSLATIONS = i18n/U1MBRomB_tr.ts \
-               i18n/qt_tr.ts
+               i18n/U1MBRomB_de.ts \
+               i18n/qt_tr.ts \
+               i18n/qt_de.ts
 
 RC_FILE = U1MBRomB.rc \
 
 OTHER_FILES += \
     U1MBRomB.rc
+
+
 
 
 

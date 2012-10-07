@@ -5,7 +5,7 @@ INPUT(
 ./release\u1mbrombsettings.o
 ./release\optionsdialog.o
 ./release\helpdialog.o
-./release\creditsdiaalog.o
+./release\creditsdialog.o
 ./release\moc_mainwindow.o
 ./release\moc_aboutdialog.o
 ./release\moc_optionsdialog.o

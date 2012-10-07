@@ -30,7 +30,7 @@
     <normaloff>:/icons/images/U1MBRomB.ico</normaloff>:/icons/images/U1MBRomB.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="mwFrame">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -90,9 +90,12 @@
      <property name="columnCount">
       <number>1</number>
      </property>
+     <attribute name="headerVisible">
+      <bool>true</bool>
+     </attribute>
      <column>
       <property name="text">
-       <string notr="true">1</string>
+       <string notr="true"/>
       </property>
      </column>
      <item>
@@ -367,7 +370,7 @@
       <bool>true</bool>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>8</number>
      </property>
      <widget class="QWidget" name="pageSDX">
       <widget class="QLabel" name="pathSDX">

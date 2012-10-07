@@ -6,24 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>645</width>
+    <width>500</width>
     <height>554</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>645</width>
+    <width>500</width>
     <height>554</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>645</width>
+    <width>500</width>
     <height>554</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Licence &amp; Credits</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: qlineargradient(spread:repeat, x1:0, y1:0.267, x2:1, y2:0.261, stop:0 rgba(59, 48, 47, 255), stop:1 rgba(255, 255, 255, 255));</string>
@@ -31,7 +31,7 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>400</x>
      <y>510</y>
      <width>81</width>
      <height>32</height>
@@ -49,9 +49,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>651</width>
-     <height>501</height>
+     <width>500</width>
+     <height>500</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 9pt &quot;Calibri&quot;;</string>
@@ -61,11 +67,12 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;BUILDER&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;          &lt;img src=&quot;:/icons/images/U1MBRomB2.ico&quot; /&gt;&lt;span style=&quot; font-size:large; font-weight:600; color:#633434;&quot;&gt;&lt;br /&gt;            BUILDER&lt;/span&gt; &lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;Copyright (C) 2012&lt;br /&gt;by&lt;br /&gt;Ray Ataergin&lt;/span&gt;&lt;br /&gt;&lt;a href=&quot;http://www.atari8warez.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;atari8warez.com&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Licence&lt;/span&gt;&lt;span style=&quot; font-size:large;&quot;&gt;:&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;img src=&quot;:/icons/images/U1MBRomB2.ico&quot; /&gt;&lt;span style=&quot; font-size:large; font-weight:600; color:#633434;&quot;&gt;&lt;br /&gt;              BUILDER&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;Copyright (C) 2012&lt;br /&gt;by&lt;br /&gt;Ray Ataergin&lt;/span&gt;&lt;br /&gt;&lt;a href=&quot;http://www.atari8warez.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;atari8warez.com&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Licence&lt;/span&gt;&lt;span style=&quot; font-size:large;&quot;&gt;:&lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;This program is free software. You can distribute it and/or modify it under the terms of GNU General Public Licence as published by the Free Software Foundation version 3 of the licence&lt;/span&gt; &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied WARRANTY OF MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the licence.htm file for more details.&lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied WARRANTY OF MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt; See the licence.htm file for more details.&lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;You should have received a copy of the GNU General Public Licence along with this program, if not see &lt;/span&gt;&lt;a href=&quot;http://www.gnu.org/licenses/&quot;&gt;&lt;span style=&quot; font-size:large; text-decoration: underline; color:#0000ff;&quot;&gt;GNU Licenses Page&lt;/span&gt;&lt;/a&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt; &lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Acknowledgements:&lt;/span&gt; &lt;/p&gt;

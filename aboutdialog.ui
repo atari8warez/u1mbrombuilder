@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>559</width>
-    <height>397</height>
+    <width>414</width>
+    <height>319</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -15,6 +15,18 @@
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>414</width>
+    <height>319</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>414</width>
+    <height>319</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>About U1MBRomB</string>
@@ -32,8 +44,8 @@
   <widget class="QDialogButtonBox" name="AboutClose">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>350</y>
+     <x>320</x>
+     <y>280</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -62,21 +74,24 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>560</width>
-     <height>400</height>
+     <width>414</width>
+     <height>319</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>560</width>
-     <height>400</height>
+     <width>414</width>
+     <height>319</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>560</width>
-     <height>400</height>
+     <width>414</width>
+     <height>319</height>
     </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>

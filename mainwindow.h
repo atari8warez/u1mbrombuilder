@@ -109,6 +109,7 @@ private:
     QString OS3RomFilePath;
     QString OS4RomFile;
     QString OS4RomFilePath;
+    QString u1mbrombPath;
 
     int U1MBSize;
     int SDXSize;
@@ -154,6 +155,7 @@ private slots:
      void setRomDescs();
      void resetRomPaths();
      void resetRomFileName();
+     void reassembleRom();
      void on_treeWidget_itemChanged(QTreeWidgetItem* item,int column);
      void on_treeWidget_itemClicked(QTreeWidgetItem* item, int column);
      void on_treeWidget_currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* previous);

@@ -1,15 +1,22 @@
 #include "creditsdialog.h"
 #include "ui_creditsdialog.h"
+#include "u1mbrombsettings.h"
+
+CreditsDialog *creditsDialog;
 
 CreditsDialog::CreditsDialog(QWidget *parent, QString version) :
     QDialog(parent),
     m_ui(new Ui::CreditsDialog)
 {
+    creditsDialog = this;
     Qt::WindowFlags flags = windowFlags();
     flags = flags & (~Qt::WindowContextHelpButtonHint);
     setWindowFlags(flags);
 
     m_ui->setupUi(this);
+    CreditsDialog::setStyleSheet(u1mbrombSettings->backColor(false, 0));
+    m_ui->textBrowser->setStyleSheet(u1mbrombSettings->backColor(false,0));
+
 
 }
 
@@ -29,4 +36,3 @@ void CreditsDialog::changeEvent(QEvent *e)
         break;
     }
 }
-

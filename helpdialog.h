@@ -20,7 +20,6 @@ protected:
 private:
     Ui::HelpDialog *m_ui;
 
-//private slots:
 };
 
 #endif // HELPDIALOG_H

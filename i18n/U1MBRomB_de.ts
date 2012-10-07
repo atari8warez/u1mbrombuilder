@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="tr_TR">
+<TS version="2.0" language="de_DE">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../aboutdialog.ui" line="32"/>
         <source>About U1MBRomB</source>
-        <translation>U1MBRomB Hakkında</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../creditsdialog.ui" line="26"/>
         <source>Licence &amp; Credits</source>
-        <translation>Lisans ve krediler</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
         <location filename="../creditsdialog.ui" line="66"/>
@@ -33,12 +33,12 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:600;&quot;&gt;Acknowledgements:&lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:40px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt;Sebastian Bartkowicz &lt;/span&gt;&lt;span style=&quot; font-size:large; font-style:italic;&quot;&gt;(Candle&apos;O&apos;Sin)&lt;/span&gt;&lt;span style=&quot; font-size:large;&quot;&gt; for designing and building the Ultimate 1MB upgrade board.&lt;br /&gt;Fratzengeballer &lt;/span&gt;&lt;span style=&quot; font-size:large; font-style:italic;&quot;&gt;(Atariage User)&lt;/span&gt;&lt;span style=&quot; font-size:large;&quot;&gt; for German translation.&lt;br /&gt;AtariGeezer &lt;/span&gt;&lt;span style=&quot; font-size:large; font-style:italic;&quot;&gt;(Atariage User) &lt;/span&gt;&lt;span style=&quot; font-size:large;&quot;&gt;for motivating me to write this software.&lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large;&quot;&gt; &lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../creditsdialog.ui" line="84"/>
         <source>qrc:/docs/docs/credits.html</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -46,7 +46,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../helpdialog.ui" line="26"/>
         <source>U1MB Rom Builder Help</source>
-        <translation>U1MB Rom Kurucu Yardım Sayfası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
         <location filename="../helpdialog.ui" line="66"/>
@@ -403,184 +403,83 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large;&quot;&gt; &lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; &lt;/span&gt; &lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt; &lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../helpdialog.ui" line="422"/>
         <source>qrc:/docs/docs/u1mb_rom_builder_v1.html</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="15776"/>
-        <source>File</source>
-        <translation>Dosya</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15786"/>
-        <source>Tools</source>
-        <translation>Araçlar</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15792"/>
-        <location filename="../mainwindow.ui" line="15805"/>
-        <source>Help</source>
-        <translation>Yardım</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15825"/>
-        <source>About</source>
-        <translation>Hakkında</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15810"/>
-        <source>Options</source>
-        <translation>Seçenekler</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="111"/>
         <source>SDX (256K)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="140"/>
         <source>BIOS (16K)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>BASIC (8K)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="233"/>
-        <source>XEGS Game (8K)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="281"/>
-        <source>XL/XE OS (16K)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15720"/>
-        <source>Extract Rom</source>
-        <translation>Rom İhraç</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15733"/>
-        <source>Load Rom</source>
-        <translation>Rom Yükle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="192"/>
         <location filename="../mainwindow.ui" line="240"/>
         <location filename="../mainwindow.ui" line="288"/>
         <source>Slot 1</source>
-        <translation>No 1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="202"/>
         <location filename="../mainwindow.ui" line="250"/>
         <location filename="../mainwindow.ui" line="298"/>
         <source>Slot 2</source>
-        <translation>No 2</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="222"/>
-        <location filename="../mainwindow.ui" line="270"/>
-        <location filename="../mainwindow.ui" line="318"/>
-        <source>Slot 4</source>
-        <translation>No 4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="212"/>
         <location filename="../mainwindow.ui" line="260"/>
         <location filename="../mainwindow.ui" line="308"/>
         <source>Slot 3</source>
-        <translation>No 3</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="222"/>
+        <location filename="../mainwindow.ui" line="270"/>
+        <location filename="../mainwindow.ui" line="318"/>
+        <source>Slot 4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="233"/>
+        <source>XEGS Game (8K)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="281"/>
+        <source>XL/XE OS (16K)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="329"/>
         <source>ALL ROMS</source>
-        <translation>TÜM ROMLAR</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
         <source>ROM  NAME        </source>
-        <translation>ROM  ADI         </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="779"/>
         <source>Spartados X</source>
-        <translation>Spartados X</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="1133"/>
-        <location filename="../mainwindow.ui" line="1699"/>
-        <location filename="../mainwindow.ui" line="2674"/>
-        <location filename="../mainwindow.ui" line="3433"/>
-        <location filename="../mainwindow.ui" line="4027"/>
-        <location filename="../mainwindow.ui" line="5714"/>
-        <location filename="../mainwindow.ui" line="7000"/>
-        <location filename="../mainwindow.ui" line="8286"/>
-        <location filename="../mainwindow.ui" line="8471"/>
-        <source>   DESCRIPTION</source>
-        <translation>   TANIM</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="2318"/>
-        <source>U1MB Bios</source>
-        <translation>U1MB Bios</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15668"/>
-        <source>Load U1MB</source>
-        <translation>U1MB Yükle</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15681"/>
-        <source>Save U1MB</source>
-        <translation>U1MB Kaydet</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15694"/>
-        <location filename="../mainwindow.ui" line="15846"/>
-        <source>Make ATR</source>
-        <translation>ATR Kaydet</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15746"/>
-        <source>New U1MB</source>
-        <translation>Yeni U1MB</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15815"/>
-        <source>Load U1Mb Rom</source>
-        <translation>U1Mb Rom yükle</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15820"/>
-        <source>Save U1Mb Rom</source>
-        <translation>U1Mb Rom Kaydet</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15841"/>
-        <source>Credits</source>
-        <translation>Krediler</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15851"/>
-        <source>New U1Mb Rom</source>
-        <translation>Yeni U1MB Rom</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="15828"/>
-        <location filename="../mainwindow.ui" line="15831"/>
-        <source>About U1MBRomB</source>
-        <translation>U1MBRomB Hakkında</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="956"/>
@@ -593,217 +492,291 @@ p, li { white-space: pre-wrap; }
         <location filename="../mainwindow.ui" line="8109"/>
         <location filename="../mainwindow.ui" line="15592"/>
         <source>FILE NAME / PATH</source>
-        <translation>DOSYA ADI / KLASÖR</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1133"/>
+        <location filename="../mainwindow.ui" line="1699"/>
+        <location filename="../mainwindow.ui" line="2674"/>
+        <location filename="../mainwindow.ui" line="3433"/>
+        <location filename="../mainwindow.ui" line="4027"/>
+        <location filename="../mainwindow.ui" line="5714"/>
+        <location filename="../mainwindow.ui" line="7000"/>
+        <location filename="../mainwindow.ui" line="8286"/>
+        <location filename="../mainwindow.ui" line="8471"/>
+        <source>   DESCRIPTION</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="2318"/>
+        <source>U1MB Bios</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15668"/>
+        <source>Load U1MB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15681"/>
+        <source>Save U1MB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15694"/>
+        <location filename="../mainwindow.ui" line="15846"/>
+        <source>Make ATR</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="15707"/>
         <location filename="../mainwindow.ui" line="15836"/>
         <source>Exit</source>
-        <translation>Çıkış</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="646"/>
-        <source> -- untitled.rom </source>
-        <translation> -- isimsiz.rom</translation>
+        <location filename="../mainwindow.ui" line="15720"/>
+        <source>Extract Rom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15733"/>
+        <source>Load Rom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15746"/>
+        <source>New U1MB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15776"/>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15786"/>
+        <source>Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15792"/>
+        <location filename="../mainwindow.ui" line="15805"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15810"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15815"/>
+        <source>Load U1Mb Rom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15820"/>
+        <source>Save U1Mb Rom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15825"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15828"/>
+        <location filename="../mainwindow.ui" line="15831"/>
+        <source>About U1MBRomB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15841"/>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="15851"/>
+        <source>New U1Mb Rom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Rom file size error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="191"/>
+        <source>Rom size expected to be </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="191"/>
+        <source> bytes. The size of this rom file is </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="204"/>
+        <source>Changes were made to the U1MB Rom</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>First run</source>
-        <translation>İlk çalıştırma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="238"/>
         <source>You are running U1MBRomB for the first time.
 
 Do you want to open the options dialog?</source>
-        <translation>U1MBRomB yi ilk kez çalıştırıyorsunuz, 
-
-Seçenekler diyaloğunu açmak istermisiniz?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>&lt;nobr&gt;Would you like to save these changes before exiting?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
-        <translation>&lt;nobr&gt;Çıkış yapmadan önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
-&lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="636"/>
-        <source>&lt;nobr&gt;Would you like to save these changes before starting a new file?&lt;/nobr&gt;
-&lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
-        <translation>&lt;nobr&gt;Yeni bir dosya başlatmadan önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
-&lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="658"/>
-        <source>&lt;nobr&gt;Would you like to save these changes before loading a new file?&lt;/nobr&gt;
-&lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
-        <translation>&lt;nobr&gt;Yeni bir dosya yüklemeden önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
-&lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="670"/>
-        <source>Open U1MB Rom File</source>
-        <translation>U1MB Rom dosyası yükle</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="409"/>
-        <location filename="../mainwindow.cpp" line="670"/>
-        <location filename="../mainwindow.cpp" line="949"/>
-        <source>Rom Files (*.rom *.bin);;All Files (*)</source>
-        <translation>Rom Dosyaları  (*.rom *.bin);;Tüm Dosyalar (*)</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="190"/>
-        <source>Rom file size error</source>
-        <translation>Rom dosya boyut hatası</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="191"/>
-        <source>Rom size expected to be </source>
-        <translation> Beklenen Rom dosya boyutu</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="191"/>
-        <source> bytes. The size of this rom file is </source>
-        <translation>bayt. Bu dosyanın boyu</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="204"/>
-        <source>Changes were made to the U1MB Rom</source>
-        <translation>U1MB Rom&apos;u değişti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="399"/>
         <source>
 
 If you like to select another valid rom file as your default base rom </source>
-        <translation>Eğer başka bir geçerli dosyayı varsayılan taban rom dosyası olarak belirlemek istıyorsanız</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="400"/>
         <source>please click YES, otherwise click NO and U1MB Rom Builder will then exit.</source>
-        <translation>EVET. aksi takdirde HAYIR a tıklayınız. HAYIR&apos;ı seçerseniz U1MBRomB burada sona erecek.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="402"/>
         <source>Unable to open the default base rom file</source>
-        <translation>Varsayılan taban Rom dosyası açılamıyor.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="403"/>
         <source>Please make sure the default rom file --&gt; </source>
-        <translation>Varsayılan taban Rom dosyası  --&gt; </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="403"/>
         <source> &lt;-- exists in directory:
 </source>
-        <translation> &lt;-- un belirtilen klasörde varolduğundan emin olun:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="408"/>
         <source>Open U1MB default base rom File</source>
-        <translation>U1MB varsayılan taban Rom&apos;unu aç</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="949"/>
+        <source>Rom Files (*.rom *.bin);;All Files (*)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="431"/>
         <source>Unable to open </source>
-        <translation>açılamıyor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="431"/>
         <source> Rom file</source>
-        <translation>Rom dosyası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="444"/>
         <source>Rom file size error while initializing default base rom image</source>
-        <translation>Varsayılan taban Rom hazırlanırken dosya boyut hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>Expected rom file size for the default base rom is: </source>
-        <translation>Beklenen varsayılan taban Rom dosya boyutu: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source> bytes. The size of --&gt; </source>
-        <translation> bayt. --&gt; </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <location filename="../mainwindow.cpp" line="453"/>
         <source> &lt;-- is: </source>
-        <translation> &lt;-- un boyu ise: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="446"/>
         <source> bytes</source>
-        <translation>bayt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="452"/>
         <source> Rom file size error</source>
-        <translation> Rom dosyası boy hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
         <source> rom size is expected to be </source>
-        <translation> Beklenen Rom dosya boyu </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
         <source> bytes. The size of --&gt;  </source>
-        <translation> bayt. --&gt;  </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
         <source> bytes.</source>
-        <translation> bayt.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="463"/>
         <source>Rom file content error while initializing default base rom image</source>
-        <translation>Varsayılan taban Rom dosyası hazırlanırken dosya iceriği hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>The default U1MB base rom file --&gt; </source>
-        <translation>Varsayılan taban Rom dosyası  --&gt; </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source> &lt;-- does not have the expected data content.</source>
-        <translation> &lt;-- beklenilen içeriğe sahip değil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <location filename="../mainwindow.cpp" line="532"/>
         <location filename="../mainwindow.cpp" line="543"/>
         <source>Rom file content error</source>
-        <translation>Rom dosyası içerik hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="471"/>
         <source>U1MB rom file you are trying to open does not have the expected data content.</source>
-        <translation>Açmaya çalışılan U1MB rom dosyasında beklenilen içerik mevcut değil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="481"/>
         <source>Setting defaults</source>
-        <translation>Varsayılan ayarlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="482"/>
         <source>Would you like to set the default base rom file name to:
  --&gt;</source>
-        <translation>Varsayılan taban Rom dosya adını --&gt; </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="483"/>
         <source> &lt;--</source>
-        <translation> &lt;-- a değiştirmek istermisiniz? </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="483"/>
@@ -811,129 +784,149 @@ If you like to select another valid rom file as your default base rom </source>
 
 and the default rom directory name to:
 </source>
-        <translation>
-
-Yeni varsayılan klasör adı:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="532"/>
         <source>SDX rom file you are trying to open does not have the expected data content.</source>
-        <translation>Açmaya çalışılan SDX rom dosyasında beklenilen içerik yok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="543"/>
         <source>BIOS rom file you are trying to open does not have the expected data content.</source>
-        <translation>Açmaya çalışılan BIOS rom dosyasında beklenilen içerik yok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="548"/>
         <source>You are loading a new BIOS </source>
-        <translation>U1MB&apos;a yeni bir BIOS Rom yüklüyorsunuz. </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Rom into U1MB. Current descriptions for BASIC, GAME and OS </source>
-        <translation>BASIC, GAME ve OS  tanımları yüklenecek Rom dosyasındaki </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="550"/>
         <source>slots will be overridden by the descriptions from the BIOS </source>
-        <translation>tanımlamalarla değiştirilecek. </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
         <source>Rom you are loading.
 
 </source>
-        <translation>Mevcut tanımlamaları korumak için </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="552"/>
         <source>Click YES to override, NO to keep the current descriptions. </source>
-        <translation>HAYIR, tanımlamaları yeni Romdan yüklemek için EVET&apos;e tıklayın.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>Confirmation needed...</source>
-        <translation>Onay gerekiyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="588"/>
         <location filename="../mainwindow.cpp" line="823"/>
         <source>Unable to open file</source>
-        <translation>Dosya açılamıyor</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="636"/>
+        <source>&lt;nobr&gt;Would you like to save these changes before starting a new file?&lt;/nobr&gt;
+&lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="646"/>
+        <source> -- untitled.rom </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="658"/>
+        <source>&lt;nobr&gt;Would you like to save these changes before loading a new file?&lt;/nobr&gt;
+&lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="670"/>
+        <source>Open U1MB Rom File</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="685"/>
         <location filename="../mainwindow.cpp" line="1052"/>
         <source>Save Rom as</source>
-        <translation>Rom&apos;u Kaydet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="685"/>
         <location filename="../mainwindow.cpp" line="1052"/>
         <source>Rom Files  (*.rom *.bin);;All files (*)</source>
-        <translation>Rom Dosyaları  (*.rom *.bin);;Tüm Dosyalar (*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="702"/>
         <source>Missing application component!</source>
-        <translation>Uygulama öğesi bulunamadı!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="703"/>
         <source>The following file is missing from the application&apos;s installation directory: </source>
-        <translation>Uygulamanın kurum klasöründe bulunamayan öğe:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="711"/>
         <source>Select the flasher executable</source>
-        <translation>Flash uygulaması dosyasını seçin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="712"/>
         <source>Atari Executable Files (*.com *.exe *.xex);;All Files (*)</source>
-        <translation>Atari uygulama dosyaları (*.com *.exe *.xex);;Tüm dosyalar (*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="719"/>
         <source>Error Opening File</source>
-        <translation>Dosya açma hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="724"/>
         <source>Flasher file size error</source>
-        <translation>Flash uygulama dosyası boy hatası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="724"/>
         <source>Flasher file size cannot be &gt; 8K (8192 bytes)</source>
-        <translation>Flash uygulama dosya boyu 8K (8192 bayt) dan fazla olamaz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="733"/>
         <source>Invalid Executable</source>
-        <translation>Geçersiz uygulama dosyası</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="733"/>
         <source>  is not a valid ATARI executable</source>
-        <translation>geçerli bir uygulama dosyası değildir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="816"/>
         <source>Save ATR as</source>
-        <translation>ATR kaydet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="816"/>
         <source>Atari Disk Image Files  (*.atr);;All files (*)</source>
-        <translation>Atari disk imaj dosyaları (*.atr);;Tüm dosyalar (*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="949"/>
         <source>Open Rom File</source>
-        <translation>Rom dosyası aç</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -941,137 +934,137 @@ Yeni varsayılan klasör adı:</translation>
     <message>
         <location filename="../optionsdialog.ui" line="35"/>
         <source>Options</source>
-        <translation>Seçenekler</translation>
-    </message>
-    <message>
-        <location filename="../optionsdialog.ui" line="600"/>
-        <source>Language:</source>
-        <translation>Dil</translation>
-    </message>
-    <message>
-        <location filename="../optionsdialog.ui" line="1190"/>
-        <source>Minimize to system tray</source>
-        <translation>Sistem tablasına küçült</translation>
-    </message>
-    <message>
-        <location filename="../optionsdialog.ui" line="1414"/>
-        <source>Save window positions and sizes</source>
-        <translation>Pencere pozisyonlarını ve boyutlarını kaydet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="296"/>
         <source>User Interface Settings</source>
-        <translation>Kullanıcı arayüzü ayarları</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.ui" line="600"/>
+        <source>Language:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="928"/>
         <source>Window Background Style</source>
-        <translation>Pencere zemin rengi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="939"/>
         <source>Default  (Gradient)</source>
-        <translation>Varsayılan (Dereceli değişim)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="944"/>
         <source>SunRay</source>
-        <translation>Güneş ışığı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="949"/>
         <source>Matte Gray</source>
-        <translation>Mat gri</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.ui" line="1190"/>
+        <source>Minimize to system tray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../optionsdialog.ui" line="1414"/>
+        <source>Save window positions and sizes</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="1694"/>
         <source>Rom Path Settings</source>
-        <translation>Rom klasör ayarları</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="2160"/>
         <source>U1MB default base rom name</source>
-        <translation>U1MB varsayılan taban rom adı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="2303"/>
         <source>U1MBv2.rom</source>
-        <translation>U1MBv2.rom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="2770"/>
         <location filename="../optionsdialog.ui" line="3725"/>
         <source>Default base rom folder</source>
-        <translation>Varsayılan taban rom klasörü</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="2929"/>
         <location filename="../optionsdialog.ui" line="3555"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="3539"/>
         <source>Open From / Save To  rom folder</source>
-        <translation>Rom Açma / Kaydetme klasörü</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="3917"/>
         <source>None - Browse for folder</source>
-        <translation>Hiçbiri - Klasörlere gözat ve seç</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4106"/>
         <source>Use:</source>
-        <translation>Aşağıdaki seçeneklerden birini  kullan:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4276"/>
         <source>Last used folder</source>
-        <translation>Son kullanılan klasör</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4465"/>
         <location filename="../optionsdialog.ui" line="4635"/>
         <source>or,</source>
-        <translation>veya,</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4645"/>
         <source>Save/Commit or Cancel/Ignore changes made to the settings</source>
-        <translation>Ayarlara yapılan değişiklikleri kaydet veya gözardı et</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4671"/>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4676"/>
         <source>User interface</source>
-        <translation>Kullanıcı arayüzü</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.ui" line="4690"/>
         <source>Rom</source>
-        <translation>Rom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="55"/>
         <source>Automatic</source>
-        <translation>Otomatik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="58"/>
         <location filename="../optionsdialog.cpp" line="67"/>
         <source>English</source>
-        <translation>Türkçe</translation>
+        <translation>Deutsch</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="146"/>
         <location filename="../optionsdialog.cpp" line="156"/>
         <source>Select Directory</source>
-        <translation>Klasör seç</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
