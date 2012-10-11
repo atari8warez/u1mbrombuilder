@@ -15658,9 +15658,9 @@
     <widget class="QPushButton" name="loadU1MB">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>220</y>
-       <width>71</width>
+       <x>40</x>
+       <y>240</y>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -15671,9 +15671,9 @@
     <widget class="QPushButton" name="saveU1MB">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>270</y>
-       <width>71</width>
+       <x>40</x>
+       <y>290</y>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -15684,9 +15684,9 @@
     <widget class="QPushButton" name="makeATR">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>320</y>
-       <width>71</width>
+       <x>40</x>
+       <y>340</y>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -15697,9 +15697,9 @@
     <widget class="QPushButton" name="quit">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>390</y>
-       <width>71</width>
+       <x>40</x>
+       <y>500</y>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -15712,7 +15712,7 @@
       <rect>
        <x>400</x>
        <y>540</y>
-       <width>91</width>
+       <width>101</width>
        <height>21</height>
       </rect>
      </property>
@@ -15723,9 +15723,9 @@
     <widget class="QPushButton" name="loadROM">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>290</x>
        <y>540</y>
-       <width>81</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -15736,9 +15736,9 @@
     <widget class="QPushButton" name="newU1MB">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>170</y>
-       <width>71</width>
+       <x>40</x>
+       <y>190</y>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>

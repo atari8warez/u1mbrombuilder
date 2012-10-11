@@ -476,7 +476,7 @@ void MainWindow::loadRom(QString romDir, QString romName, QString type, int romS
 
          if(type == "default" || type == "U1MB") {
              if (type == "default") {
-                 U1MBRomFile = "untitled.rom";
+                 U1MBRomFile = tr("untitled.rom");
                  if (initError) {
                      int answer = QMessageBox::question(this, tr("Setting defaults"),
                       tr("Would you like to set the default base rom file name to:\n -->")+  romName +
