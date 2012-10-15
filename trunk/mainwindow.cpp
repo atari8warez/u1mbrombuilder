@@ -13,6 +13,8 @@
 #include <QString>
 #include <QChar>
 #include <QDialog>
+#include <QDate>
+#include <QTime>
 #include <iostream>
 
 U1MBRomBSettings *u1mbrombSettings;
@@ -810,6 +812,29 @@ void MainWindow::on_actionMakeATR_triggered()
      offset += 256;
      mainWindow->reassembleRom();
      atrData.insert(offset, romData);
+
+     QDate date = QDate::currentDate();
+     QTime time = QTime::currentTime();
+     int year = date.year();
+     year = year - 2000;
+
+     // Update the date and time of the FLASH.COM
+     atrData[1208] = date.day();
+     atrData[1209] = date.month();
+     atrData[1210] = year;
+
+     atrData[1211] = time.hour();
+     atrData[1212] = time.minute();
+     atrData[1213] = time.second();
+
+     // Update the date and time of the U1M.ROM
+     atrData[1231] = date.day();
+     atrData[1232] = date.month();
+     atrData[1233] = year;
+
+     atrData[1234] = time.hour();
+     atrData[1235] = time.minute();
+     atrData[1236] = time.second();
 
      // Write the .atr file
      dir = u1mbrombSettings->defRomDir();
