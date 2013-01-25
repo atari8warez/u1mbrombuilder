@@ -696,6 +696,33 @@ bool MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionMakeATR_triggered()
 {
+    if (changesMade) {
+        QString saveMsg = tr("<nobr>Would you like to save these changes before creating the ATR?</nobr>\n");
+        saveMsg += tr("\n");
+        saveMsg += tr("<nobr>If you click NO your ATR will be created WITH your changes</nobr>\n");
+        saveMsg += tr("<nobr>but your changes will not be saved to the U1MB Rom until you</nobr>\n");
+        saveMsg += tr("<nobr>exit the program, at which time you will be asked to save them again</nobr>\n");
+        saveMsg += tr("\n");
+        saveMsg += tr("<nobr>If you click CANCEL you will be returned back to editing</nobr>");
+
+
+        int answer = mainWindow->showChangesMade(saveMsg);
+        if (answer == QMessageBox::Yes)  {
+
+            ui->actionSave->trigger();
+        }
+        else {
+            if(answer == QMessageBox::No) {
+                mainWindow->updateDescs(8338);
+                mainWindow->reassembleRom();
+            } else {
+                return;
+            }
+        }
+    } else {
+        mainWindow->reassembleRom();
+    }
+
     // Build the ATR image
     QByteArray atrData, flasherData;
 
@@ -810,7 +837,7 @@ void MainWindow::on_actionMakeATR_triggered()
 
      // Insert U1MB Rom data
      offset += 256;
-     mainWindow->reassembleRom();
+//     mainWindow->reassembleRom();
      atrData.insert(offset, romData);
 
      QDate date = QDate::currentDate();
