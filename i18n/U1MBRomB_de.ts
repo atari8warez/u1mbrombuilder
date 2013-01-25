@@ -968,32 +968,32 @@ p, li { white-space: pre-wrap; }
         <translation>Neues U1Mb Rom erstellen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Rom file size error</source>
         <translation>Rom-Dateigrößenfehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source>Rom size expected to be </source>
         <translation>Die erwartete Romgröße sollte </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source> bytes. The size of this rom file is </source>
         <translation> Bytes sein. Die Romgröße ist allerdings </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="204"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>Changes were made to the U1MB Rom</source>
         <translation>Es wurden Änderungen am U1MB Rom gemacht</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="237"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>First run</source>
         <translation>Erstmaliger Start</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="238"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>You are running U1MBRomB for the first time.
 
 Do you want to open the options dialog?</source>
@@ -1002,14 +1002,14 @@ Do you want to open the options dialog?</source>
 Möchtest Du jetzt das Optionsmenü öffnen?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="265"/>
+        <location filename="../mainwindow.cpp" line="267"/>
         <source>&lt;nobr&gt;Would you like to save these changes before exiting?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Möchtest Du die Änderungen speichern, bevor Du das Programm beendest?&lt;/nobr&gt;
 &lt;nobr&gt;Klicke auf Abbrechen um zurück zum Editor zu gelangen&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>
 
 If you like to select another valid rom file as your default base rom </source>
@@ -1018,145 +1018,145 @@ If you like to select another valid rom file as your default base rom </source>
 Wenn Du gern eine andere gültige Romdatei als Standdardrom wählen möchtest </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>please click YES, otherwise click NO and U1MB Rom Builder will then exit.</source>
         <translation>Drücke auf JA, ansonsten drücke auf NEIN und U1MB Rom Builder wird sich dann beenden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>Unable to open the default base rom file</source>
         <translation>Kann die Standard-Romdatei nicht öffnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>Please make sure the default rom file --&gt; </source>
         <translation>Vergewissere Dich das die Standard-Romdatei --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source> &lt;-- exists in directory:
 </source>
         <translation> &lt;-- in diesem Verzeichnus existiert:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>Open U1MB default base rom File</source>
         <translation>Öffne U1MB Standard-Romdatei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
-        <location filename="../mainwindow.cpp" line="670"/>
-        <location filename="../mainwindow.cpp" line="949"/>
+        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="672"/>
+        <location filename="../mainwindow.cpp" line="1001"/>
         <source>Rom Files (*.rom *.bin);;All Files (*)</source>
         <translation>Rom Dateien (*.rom *.bin);;Alle Dateien (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>Unable to open </source>
         <translation>Kann dieses nicht öffnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source> Rom file</source>
         <translation>Rom Datei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Rom file size error while initializing default base rom image</source>
         <translation>Fehler bei derRomgröße während des Initialisierens des Standardromabbildes aufgetreten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Expected rom file size for the default base rom is: </source>
         <translation>Erwartete Romgröße des Standardroms ist: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source> bytes. The size of --&gt; </source>
         <translation> Bytes. Die Größe von --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> &lt;-- is: </source>
         <translation> &lt;-- ist: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source> bytes</source>
         <translation> Bytes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="452"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source> Rom file size error</source>
         <translation> Romgrößenfehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> rom size is expected to be </source>
         <translation> Erwartete Größe ist </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> bytes. The size of --&gt;  </source>
         <translation> Bytes. Die Größe von --&gt;  </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> bytes.</source>
         <translation> Bytes.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="463"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>Rom file content error while initializing default base rom image</source>
         <translation>Fehler im Rominhalt während der Initialisierung des Standardroms aufgetreten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>The default U1MB base rom file --&gt; </source>
         <translation>Die U1MB Standardromdatei --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source> &lt;-- does not have the expected data content.</source>
         <translation> &lt;-- hat nicht den erwarteten Dateninhalt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
-        <location filename="../mainwindow.cpp" line="532"/>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="534"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Rom file content error</source>
         <translation>Inhalt der Romdatei fehlerhaft</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>U1MB rom file you are trying to open does not have the expected data content.</source>
         <translation>Die U1MB Romdatei die Du öffnen möchtest, hat nicht den erwarteten Inhalt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="479"/>
+        <location filename="../mainwindow.cpp" line="481"/>
         <source>untitled.rom</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="481"/>
+        <location filename="../mainwindow.cpp" line="483"/>
         <source>Setting defaults</source>
         <translation>Standardwerte setzen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="482"/>
+        <location filename="../mainwindow.cpp" line="484"/>
         <source>Would you like to set the default base rom file name to:
  --&gt;</source>
         <translation>Möchtest Du den Namen der Standard-Romdatei auf:
  --&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="485"/>
         <source> &lt;--</source>
         <translation>.&lt;-- ändern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="485"/>
         <source>
 
 and the default rom directory name to:
@@ -1166,146 +1166,182 @@ and the default rom directory name to:
 und den Standardpfad ändern auf:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="534"/>
         <source>SDX rom file you are trying to open does not have the expected data content.</source>
         <translation>Die SDX-Romdatei die Du zu öffnen versuchst, hat nicht den erwarteten Dateninhalt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>BIOS rom file you are trying to open does not have the expected data content.</source>
         <translation>Die BIOS-Romdatei die Du zu öffnen versuchst, hat nicht den erwarteten Dateninhalt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="548"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>You are loading a new BIOS </source>
         <translation>Du lädst ein neues BIOS </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="551"/>
         <source>Rom into U1MB. Current descriptions for BASIC, GAME and OS </source>
         <translation>Abbild in das U1MB. Die bisherigen Beschreibungen der Basic, Game und OS </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>slots will be overridden by the descriptions from the BIOS </source>
         <translation>Slots werden durch die Beschreibungen der BIOS-Datei überschrieben, </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>Rom you are loading.
 
 </source>
         <translation>die Du gerade lädst.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="552"/>
+        <location filename="../mainwindow.cpp" line="554"/>
         <source>Click YES to override, NO to keep the current descriptions. </source>
         <translation>Drücke JA um zu überschreiben, NEIN um die aktuellen Beschreibungen zu behalten. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="556"/>
         <source>Confirmation needed...</source>
         <translation>Eine Bestätigung ist nötig...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="588"/>
-        <location filename="../mainwindow.cpp" line="823"/>
+        <location filename="../mainwindow.cpp" line="590"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Unable to open file</source>
         <translation>Kann die Datei nicht öffnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="636"/>
+        <location filename="../mainwindow.cpp" line="638"/>
         <source>&lt;nobr&gt;Would you like to save these changes before starting a new file?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Möchtest Du diese Änderungen speichern bevor Du eine neue Datei erstellst?&lt;/nobr&gt;
 &lt;nobr&gt;Du kannst ABBRECHEN drücken um zum Bearbeiten zurückzukehren&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="646"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source> -- untitled.rom </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>&lt;nobr&gt;Would you like to save these changes before loading a new file?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Möchtest Du diese Änderungen speichern, bevor Du eine neue Datei lädst?&lt;/nobr&gt;
 &lt;nobr&gt;Du kannst ABBRECHEN drücken um zum Bearbeiten zurückzukehren&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="672"/>
         <source>Open U1MB Rom File</source>
         <translation>U1MB Romdatei öffnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="687"/>
+        <location filename="../mainwindow.cpp" line="1104"/>
         <source>Save Rom as</source>
         <translation>Rom speichern unter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="687"/>
+        <location filename="../mainwindow.cpp" line="1104"/>
         <source>Rom Files  (*.rom *.bin);;All files (*)</source>
         <translation>Rom Dateien  (*.rom *.bin);;Alle Dateien (*)</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="700"/>
+        <source>&lt;nobr&gt;Would you like to save these changes before creating the ATR?&lt;/nobr&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="705"/>
+        <source>
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="702"/>
+        <source>&lt;nobr&gt;If you click NO your ATR will be created WITH your changes&lt;/nobr&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="703"/>
+        <source>&lt;nobr&gt;but your changes will not be saved to the U1MB Rom until you&lt;/nobr&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="704"/>
+        <source>&lt;nobr&gt;exit the program, at which time you will be asked to save them again&lt;/nobr&gt;
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="706"/>
+        <source>&lt;nobr&gt;If you click CANCEL you will be returned back to editing&lt;/nobr&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="731"/>
         <source>Missing application component!</source>
         <translation>Fehlender Programmteil!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="732"/>
         <source>The following file is missing from the application&apos;s installation directory: </source>
         <translation>Die folgende Datei fehlt im Programminstallationsverzeichnis: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="711"/>
+        <location filename="../mainwindow.cpp" line="740"/>
         <source>Select the flasher executable</source>
         <translation>Wähle das Flasher Programm</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="741"/>
         <source>Atari Executable Files (*.com *.exe *.xex);;All Files (*)</source>
         <translation>ausführbare Atari-Dateien (*.com *.exe *.xex);;Alle Dateien (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="748"/>
         <source>Error Opening File</source>
         <translation>Fehler beim Öffnen der Datei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="753"/>
         <source>Flasher file size error</source>
         <translation>Fehler bei der Dateigröße des Flashprogrammes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="753"/>
         <source>Flasher file size cannot be &gt; 8K (8192 bytes)</source>
         <translation>Die Dateigröße des Flashprogrammes muß &gt; 8K (8192 bytes) sein</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="733"/>
+        <location filename="../mainwindow.cpp" line="762"/>
         <source>Invalid Executable</source>
         <translation>Ungültige ausführbare Datei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="733"/>
+        <location filename="../mainwindow.cpp" line="762"/>
         <source>  is not a valid ATARI executable</source>
         <translation>  ist keine gültige ausführbare ATARI-Datei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="816"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Save ATR as</source>
         <translation>ATR speichern unter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="816"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Atari Disk Image Files  (*.atr);;All files (*)</source>
         <translation>Atari Disk Image Dateien  (*.atr);;Alle Dateien (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="949"/>
+        <location filename="../mainwindow.cpp" line="1001"/>
         <source>Open Rom File</source>
         <translation>Romdatei öffnen</translation>
     </message>

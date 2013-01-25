@@ -1087,7 +1087,7 @@ dokumamak ekranda tutarlı bir sunum yapabilmek açısından önemlidir.&lt;/spa
     <message>
         <location filename="../mainwindow.ui" line="15815"/>
         <source>Load U1Mb Rom</source>
-        <translation>U1Mb Rom yükle</translation>
+        <translation>U1Mb Rom Yükle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="15820"/>
@@ -1130,17 +1130,17 @@ dokumamak ekranda tutarlı bir sunum yapabilmek açısından önemlidir.&lt;/spa
         <translation>Çıkış</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="646"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source> -- untitled.rom </source>
         <translation> -- isimsiz.rom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="237"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>First run</source>
         <translation>İlk çalıştırma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="238"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>You are running U1MBRomB for the first time.
 
 Do you want to open the options dialog?</source>
@@ -1149,192 +1149,197 @@ Do you want to open the options dialog?</source>
 Seçenekler diyaloğunu açmak istermisiniz?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="265"/>
+        <location filename="../mainwindow.cpp" line="267"/>
         <source>&lt;nobr&gt;Would you like to save these changes before exiting?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Çıkış yapmadan önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
 &lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="636"/>
+        <location filename="../mainwindow.cpp" line="638"/>
         <source>&lt;nobr&gt;Would you like to save these changes before starting a new file?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Yeni bir dosya başlatmadan önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
 &lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>&lt;nobr&gt;Would you like to save these changes before loading a new file?&lt;/nobr&gt;
 &lt;nobr&gt;You can click Cancel to return to editing&lt;/nobr&gt;</source>
         <translation>&lt;nobr&gt;Yeni bir dosya yüklemeden önce bu değişiklikleri kaydetmek istermisiniz?&lt;/nobr&gt;
 &lt;nobr&gt;İptal&apos;e tıklayarak geri dönebilirsiniz&lt;/nobr&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="672"/>
         <source>Open U1MB Rom File</source>
         <translation>U1MB Rom dosyası yükle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
-        <location filename="../mainwindow.cpp" line="670"/>
-        <location filename="../mainwindow.cpp" line="949"/>
+        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="672"/>
+        <location filename="../mainwindow.cpp" line="1001"/>
         <source>Rom Files (*.rom *.bin);;All Files (*)</source>
         <translation>Rom Dosyaları  (*.rom *.bin);;Tüm Dosyalar (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Rom file size error</source>
         <translation>Rom dosya boyut hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source>Rom size expected to be </source>
         <translation> Beklenen Rom dosya boyutu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source> bytes. The size of this rom file is </source>
         <translation>bayt. Bu dosyanın boyu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="204"/>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>Changes were made to the U1MB Rom</source>
         <translation>U1MB Rom&apos;u değişti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>
 
 If you like to select another valid rom file as your default base rom </source>
         <translation>Eğer başka bir geçerli dosyayı varsayılan taban rom dosyası olarak belirlemek istıyorsanız</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>please click YES, otherwise click NO and U1MB Rom Builder will then exit.</source>
         <translation>EVET. aksi takdirde HAYIR a tıklayınız. HAYIR&apos;ı seçerseniz U1MBRomB burada sona erecek.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>Unable to open the default base rom file</source>
         <translation>Varsayılan taban Rom dosyası açılamıyor.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>Please make sure the default rom file --&gt; </source>
         <translation>Varsayılan taban Rom dosyası  --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source> &lt;-- exists in directory:
 </source>
         <translation> &lt;-- un belirtilen klasörde varolduğundan emin olun:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>Open U1MB default base rom File</source>
         <translation>U1MB varsayılan taban Rom&apos;unu aç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source>Unable to open </source>
         <translation>açılamıyor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="433"/>
         <source> Rom file</source>
         <translation>Rom dosyası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Rom file size error while initializing default base rom image</source>
         <translation>Varsayılan taban Rom hazırlanırken dosya boyut hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Expected rom file size for the default base rom is: </source>
         <translation>Beklenen varsayılan taban Rom dosya boyutu: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source> bytes. The size of --&gt; </source>
         <translation> bayt. --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> &lt;-- is: </source>
         <translation> &lt;-- un boyu ise: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source> bytes</source>
         <translation>bayt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="452"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source> Rom file size error</source>
         <translation> Rom dosyası boy hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> rom size is expected to be </source>
         <translation> Beklenen Rom dosya boyu </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> bytes. The size of --&gt;  </source>
         <translation> bayt. --&gt;  </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source> bytes.</source>
         <translation> bayt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="463"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>Rom file content error while initializing default base rom image</source>
         <translation>Varsayılan taban Rom dosyası hazırlanırken dosya iceriği hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>The default U1MB base rom file --&gt; </source>
         <translation>Varsayılan taban Rom dosyası  --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source> &lt;-- does not have the expected data content.</source>
         <translation> &lt;-- beklenilen içeriğe sahip değil</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
-        <location filename="../mainwindow.cpp" line="532"/>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="534"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Rom file content error</source>
         <translation>Rom dosyası içerik hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>U1MB rom file you are trying to open does not have the expected data content.</source>
         <translation>Açmaya çalışılan U1MB rom dosyasında beklenilen içerik mevcut değil</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="481"/>
+        <source>untitled.rom</source>
+        <translation>isimsiz.rom</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="483"/>
         <source>Setting defaults</source>
         <translation>Varsayılan ayarlar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="482"/>
+        <location filename="../mainwindow.cpp" line="484"/>
         <source>Would you like to set the default base rom file name to:
  --&gt;</source>
         <translation>Varsayılan taban Rom dosya adını --&gt; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="485"/>
         <source> &lt;--</source>
         <translation> &lt;-- a değiştirmek istermisiniz? </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="485"/>
         <source>
 
 and the default rom directory name to:
@@ -1344,122 +1349,162 @@ and the default rom directory name to:
 Yeni varsayılan klasör adı:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="534"/>
         <source>SDX rom file you are trying to open does not have the expected data content.</source>
         <translation>Açmaya çalışılan SDX rom dosyasında beklenilen içerik yok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>BIOS rom file you are trying to open does not have the expected data content.</source>
         <translation>Açmaya çalışılan BIOS rom dosyasında beklenilen içerik yok</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="548"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>You are loading a new BIOS </source>
         <translation>U1MB&apos;a yeni bir BIOS Rom yüklüyorsunuz. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="551"/>
         <source>Rom into U1MB. Current descriptions for BASIC, GAME and OS </source>
         <translation>BASIC, GAME ve OS  tanımları yüklenecek Rom dosyasındaki </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>slots will be overridden by the descriptions from the BIOS </source>
         <translation>tanımlamalarla değiştirilecek. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>Rom you are loading.
 
 </source>
         <translation>Mevcut tanımlamaları korumak için </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="552"/>
+        <location filename="../mainwindow.cpp" line="554"/>
         <source>Click YES to override, NO to keep the current descriptions. </source>
         <translation>HAYIR, tanımlamaları yeni Romdan yüklemek için EVET&apos;e tıklayın.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="556"/>
         <source>Confirmation needed...</source>
         <translation>Onay gerekiyor...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="588"/>
-        <location filename="../mainwindow.cpp" line="823"/>
+        <location filename="../mainwindow.cpp" line="590"/>
+        <location filename="../mainwindow.cpp" line="875"/>
         <source>Unable to open file</source>
         <translation>Dosya açılamıyor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="687"/>
+        <location filename="../mainwindow.cpp" line="1104"/>
         <source>Save Rom as</source>
         <translation>Rom&apos;u Kaydet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="1052"/>
+        <location filename="../mainwindow.cpp" line="687"/>
+        <location filename="../mainwindow.cpp" line="1104"/>
         <source>Rom Files  (*.rom *.bin);;All files (*)</source>
         <translation>Rom Dosyaları  (*.rom *.bin);;Tüm Dosyalar (*)</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="700"/>
+        <source>&lt;nobr&gt;Would you like to save these changes before creating the ATR?&lt;/nobr&gt;
+</source>
+        <translation>&lt;nobr&gt;ATR kaydetmeden önce yapılan değişiklikleri U1MB Rom a kaydetmek istermisiniz?&lt;/nobr&gt;
+</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="705"/>
+        <source>
+</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="702"/>
+        <source>&lt;nobr&gt;If you click NO your ATR will be created WITH your changes&lt;/nobr&gt;
+</source>
+        <translation>&lt;nobr&gt;HAYIR a tıklarsanız ATR yaptığınız değişikliklerle beraber kaydedilecek&lt;/nobr&gt;
+</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="703"/>
+        <source>&lt;nobr&gt;but your changes will not be saved to the U1MB Rom until you&lt;/nobr&gt;
+</source>
+        <translation>&lt;nobr&gt;ancak bu değişiklikler U1MB Rom dosyasına siz programdan çıkmak&lt;/nobr&gt;
+</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="704"/>
+        <source>&lt;nobr&gt;exit the program, at which time you will be asked to save them again&lt;/nobr&gt;
+</source>
+        <translation>&lt;nobr&gt;isteyene kadar yansıtılmayacaktır.&lt;/nobr&gt;
+</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="706"/>
+        <source>&lt;nobr&gt;If you click CANCEL you will be returned back to editing&lt;/nobr&gt;</source>
+        <translation>&lt;nobr&gt;İPTAL e tıklayarak güncelleme işlemlerine geri dönebilirsiniz&lt;/nobr&gt;</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="731"/>
         <source>Missing application component!</source>
         <translation>Uygulama öğesi bulunamadı!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="732"/>
         <source>The following file is missing from the application&apos;s installation directory: </source>
         <translation>Uygulamanın kurum klasöründe bulunamayan öğe:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="711"/>
+        <location filename="../mainwindow.cpp" line="740"/>
         <source>Select the flasher executable</source>
         <translation>Flash uygulaması dosyasını seçin</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="741"/>
         <source>Atari Executable Files (*.com *.exe *.xex);;All Files (*)</source>
         <translation>Atari uygulama dosyaları (*.com *.exe *.xex);;Tüm dosyalar (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="748"/>
         <source>Error Opening File</source>
         <translation>Dosya açma hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="753"/>
         <source>Flasher file size error</source>
         <translation>Flash uygulama dosyası boy hatası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="753"/>
         <source>Flasher file size cannot be &gt; 8K (8192 bytes)</source>
         <translation>Flash uygulama dosya boyu 8K (8192 bayt) dan fazla olamaz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="733"/>
+        <location filename="../mainwindow.cpp" line="762"/>
         <source>Invalid Executable</source>
         <translation>Geçersiz uygulama dosyası</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="733"/>
+        <location filename="../mainwindow.cpp" line="762"/>
         <source>  is not a valid ATARI executable</source>
         <translation>geçerli bir uygulama dosyası değildir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="816"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Save ATR as</source>
         <translation>ATR kaydet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="816"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Atari Disk Image Files  (*.atr);;All files (*)</source>
         <translation>Atari disk imaj dosyaları (*.atr);;Tüm dosyalar (*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="949"/>
+        <location filename="../mainwindow.cpp" line="1001"/>
         <source>Open Rom File</source>
         <translation>Rom dosyası aç</translation>
     </message>

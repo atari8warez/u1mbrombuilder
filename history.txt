@@ -1,0 +1,13 @@
+
+
+Jan 25, 2013 - v1.01
+
+	* Updated Turkish Language translation.
+
+	* Fixed a problem where slot description changes were not propagated if an ATR is created without first saving the modified BIOS
+ 	  Rom file. The program now prompts the user to save the modifications before creating the ATR.
+
+	* BASIC Slot 1 description length was not limited to 14 characters, and if the user entered more than 14 characters the description
+	  was trancated when saved to the BIOS ROM. Restricted the description entry to 14 chars.
+
+Sep 19, 2012 - v1.00 - Initial Release
