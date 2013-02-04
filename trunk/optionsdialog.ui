@@ -57,7 +57,7 @@
       </sizepolicy>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page_i18n">
       <layout class="QGridLayout" name="gridLayout">
@@ -947,6 +947,16 @@
             <item>
              <property name="text">
               <string>Matte Gray</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Plain</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Plain (Lighter)</string>
              </property>
             </item>
            </widget>

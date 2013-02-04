@@ -14,6 +14,9 @@ AboutDialog::AboutDialog(QWidget *parent, QString version) :
     setWindowFlags(flags);
 
     m_ui->setupUi(this);
+
+    m_ui->versionLabel->setText(tr("Version %1").arg(version));
+
     AboutDialog::setStyleSheet(u1mbrombSettings->backColor(false, 0));
 
 }

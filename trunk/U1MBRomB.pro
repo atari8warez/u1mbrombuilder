@@ -3,7 +3,7 @@
 # Project created by QtCreator 2012-08-02T22:32:39
 #
 #-------------------------------------------------
-DEFINES += VERSION=\\\"1.01\\\"
+DEFINES += VERSION=\\\"1.02\\\"
 
 TARGET = U1MBRomB
 CONFIG   += qt

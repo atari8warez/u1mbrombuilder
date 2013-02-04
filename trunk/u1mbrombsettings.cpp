@@ -8,9 +8,8 @@ U1MBRomBSettings::U1MBRomBSettings()
     mIsFirstTime = mSettings->value("FirstTime", true).toBool();
     mSettings->setValue("FirstTime", false);
     mMainWindowTitle = mSettings->value("MainWindowTitle", " ").toString();
-    if(mMainWindowTitle == " ") {
-        mMainWindowTitle = mSettings->value("MainWindowTitle", "U1MB Rom Builder v").toString();
-        mMainWindowTitle += VERSION;
+    if(mMainWindowTitle == " " || mMainWindowTitle == "U1MB Rom Builder v1.0") {
+        mMainWindowTitle = "U1MB Rom Builder v";
         mSettings->setValue("MainWindowTitle", mMainWindowTitle);
     }
 
@@ -279,6 +278,12 @@ QString U1MBRomBSettings::backColor(bool preview, int index)
 
     case 2:
         mStyle = "background-color: qconicalgradient(cx:0.642, cy:0, angle:0, stop:0.147727 rgba(0, 0, 0, 255), stop:0.397727 rgba(138, 138, 138, 255), stop:0.443182 rgba(255, 255, 255, 255), stop:0.522727 rgba(75, 75, 75, 255), stop:0.568182 rgba(180, 180, 180, 255), stop:0.6875 rgba(147, 147, 147, 255), stop:0.823864 rgba(80, 80, 80, 255))";
+        break;
+    case 3:
+        mStyle = "background-color: rgb(83, 67, 65);";
+        break;
+    case 4:
+        mStyle = "background-color: rgb(165, 156, 131);";
         break;
     }
     return mStyle;

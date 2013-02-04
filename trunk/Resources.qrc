@@ -1,9 +1,9 @@
 <RCC>
     <qresource prefix="/images">
-        <file>images/U1MBRomB Main.png</file>
-        <file>images/U1MBRomB Main (Large).png</file>
         <file>images/U1MBRomB2.png</file>
         <file>images/U1MBRomB.png</file>
+        <file>images/U1MBRomB Main.png</file>
+        <file>images/U1MBRomB Main (Large).png</file>
         <file>images/U1MBRomB About.png</file>
     </qresource>
 </RCC>

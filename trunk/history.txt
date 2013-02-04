@@ -1,6 +1,8 @@
+Feb 4, 2013 - v1.0.2
 
+	+ Added plain background color selection
 
-Jan 25, 2013 - v1.01
+Jan 25, 2013 - v1.0.1
 
 	* Updated Turkish Language translation.
 
