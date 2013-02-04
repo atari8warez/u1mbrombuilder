@@ -103,8 +103,33 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="versionLabel">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>100</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:repeat, x1:0, y1:0.267, x2:1, y2:0.261, stop:0 rgba(0, 0, 0, 0));</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>AboutImage</zorder>
   <zorder>AboutClose</zorder>
+  <zorder>versionLabel</zorder>
  </widget>
  <resources>
   <include location="Resources.qrc"/>

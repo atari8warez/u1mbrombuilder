@@ -522,7 +522,7 @@ void MainWindow::loadRom(QString romDir, QString romName, QString type, int romS
              OS4data = romData.mid(507904, 16384);
 
              mainWindow->populateDescs(8338);
-             appWindowTitle = u1mbrombSettings->mainWindowTitle() + " -- " + U1MBRomFile;
+             appWindowTitle = u1mbrombSettings->mainWindowTitle() + VERSION + " -- " + U1MBRomFile;
              mainWindow->setRomDescs();
              mainWindow->resetRomPaths();
              mainWindow->resetRomFileName();
