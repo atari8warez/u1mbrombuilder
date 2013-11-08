@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>607</width>
-    <height>656</height>
+    <height>630</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>607</width>
-    <height>656</height>
+    <height>630</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>607</width>
-    <height>656</height>
+    <height>630</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -342,10 +342,12 @@
      <property name="font">
       <font>
        <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
-      <string>ROM  NAME        </string>
+      <string>ROM  NAME             </string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -370,7 +372,7 @@
       <bool>true</bool>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>8</number>
      </property>
      <widget class="QWidget" name="pageSDX">
       <widget class="QLabel" name="pathSDX">
@@ -4419,7 +4421,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>220</y>
+         <y>226</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -4449,7 +4451,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>220</y>
+         <y>226</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -4656,7 +4658,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>240</y>
+         <y>246</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -4689,7 +4691,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>260</y>
+         <y>266</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -4722,7 +4724,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>280</y>
+         <y>286</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -4752,7 +4754,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>240</y>
+         <y>246</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -4956,7 +4958,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>260</y>
+         <y>266</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -5160,7 +5162,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>280</y>
+         <y>286</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -7012,7 +7014,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>390</y>
+         <y>395</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -7651,7 +7653,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>430</y>
+         <y>435</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -7882,7 +7884,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>410</y>
+         <y>415</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -7909,7 +7911,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>450</y>
+         <y>455</y>
          <width>101</width>
          <height>16</height>
         </rect>
@@ -9501,7 +9503,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>220</y>
+         <y>226</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -9705,7 +9707,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>240</y>
+         <y>246</y>
          <width>171</width>
          <height>20</height>
         </rect>
@@ -9909,7 +9911,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>260</y>
+         <y>266</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -10113,7 +10115,7 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>280</y>
+         <y>286</y>
          <width>171</width>
          <height>21</height>
         </rect>
@@ -10320,7 +10322,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>280</y>
+         <y>286</y>
          <width>91</width>
          <height>21</height>
         </rect>
@@ -10525,7 +10527,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>260</y>
+         <y>266</y>
          <width>91</width>
          <height>21</height>
         </rect>
@@ -10730,7 +10732,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>240</y>
+         <y>246</y>
          <width>91</width>
          <height>21</height>
         </rect>
@@ -10935,7 +10937,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>220</y>
+         <y>226</y>
          <width>91</width>
          <height>21</height>
         </rect>
@@ -15746,6 +15748,28 @@
       <string>New U1MB</string>
      </property>
     </widget>
+    <widget class="QLabel" name="biosVersion">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>541</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:repeat, x1:0, y1:0.267, x2:1, y2:0.261, stop:0 rgba(0, 0, 0, 0));
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
     <zorder>label3</zorder>
     <zorder>loadU1MB</zorder>
     <zorder>saveU1MB</zorder>
@@ -15760,6 +15784,7 @@
     <zorder>label2</zorder>
     <zorder>newU1MB</zorder>
     <zorder>label4</zorder>
+    <zorder>biosVersion</zorder>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

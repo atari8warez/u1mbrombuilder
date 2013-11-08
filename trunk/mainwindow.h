@@ -75,6 +75,7 @@ private:
 
     QString U1MBRomFile;
     QString U1MBRomFilePath;
+    QString U1MBVersion;
     QString SDXRomFile;
     QString SDXRomFilePath;
     QString RSVD1RomFile;
