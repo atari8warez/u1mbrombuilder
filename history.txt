@@ -1,3 +1,10 @@
+Nov 8, 2013 - v1.0.4
+	+ Updated the flasher component. New flasher is said to support the SST 39SF040 Chip in the U1MB (not tested by me). For the latest version of this flasher always check "SDX446_ultimate.atr" file from the SDX project website. The flasher can be updated by replacing the file "flasher.com" in the application's ROMS folder with the new flasher from "SDX446_ultimate.atr".
+
+Feb 27, 2013 - v1.0.3
+	
+	+ Added support for U1MB v.1 ROM
+
 Feb 4, 2013 - v1.0.2
 
 	+ Added plain background color selection

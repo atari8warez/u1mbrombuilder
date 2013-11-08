@@ -145,25 +145,25 @@ MainWindow::MainWindow(QWidget *parent) :
     connect (ui->descRSVD1, SIGNAL(editingFinished()), this, SLOT(rsvdDescChanged()));
     connect (ui->descRSVD2, SIGNAL(editingFinished()), this, SLOT(rsvdDescChanged()));
     connect (ui->descRSVD3, SIGNAL(editingFinished()), this, SLOT(rsvdDescChanged()));
-    connect (ui->descBAS1, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descBAS2, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descBAS3, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descBAS4, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descXEGS1, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descXEGS2, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descXEGS3, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descXEGS4, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descOS1, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descOS2, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descOS3, SIGNAL(editingFinished()), this, SLOT(descChanged()));
-    connect (ui->descOS4, SIGNAL(editingFinished()), this, SLOT(descChanged()));
+    connect (ui->descBAS1, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descBAS2, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descBAS3, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descBAS4, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descXEGS1, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descXEGS2, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descXEGS3, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descXEGS4, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descOS1, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descOS2, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descOS3, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
+    connect (ui->descOS4, SIGNAL(textEdited(QString)), this, SLOT(descChanged()));
     connect (ui->treeWidget, SIGNAL(itemChanged(QTreeWidgetItem*,int)), this, SLOT(rsvdChanged()));
 
 
     terminalERR = false;
     changesMade  = false;
 
-// Load default U1MB v2 Rom as a base to work with
+// Load default U1MB Rom as a base to work with
     mainWindow->loadRom(u1mbrombSettings->defBaseRomDir(), u1mbrombSettings->defBaseRomName(), "default", U1MBSize);
 }
 
@@ -365,23 +365,30 @@ void MainWindow::updateDescs(int offset)
     offset += 32;
     mainWindow->putDescs(ui->descOS4->text(),offset);
 
-    offset += 800;
-    mainWindow->putDescs(ui->descBAS1->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descBAS2->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descBAS3->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descBAS4->text(),offset);
+    if(U1MBVersion == "1") {
+        offset += 800;
+        mainWindow->putDescs(ui->descBAS1->text(),offset);
+        offset += 128;
+        mainWindow->putDescs(ui->descXEGS1->text(),offset);
+    } else {
+        offset += 800;
+        mainWindow->putDescs(ui->descBAS1->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descBAS2->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descBAS3->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descBAS4->text(),offset);
 
-    offset += 32;
-    mainWindow->putDescs(ui->descXEGS1->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descXEGS2->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descXEGS3->text(),offset);
-    offset += 32;
-    mainWindow->putDescs(ui->descXEGS4->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descXEGS1->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descXEGS2->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descXEGS3->text(),offset);
+        offset += 32;
+        mainWindow->putDescs(ui->descXEGS4->text(),offset);
+    }
 }
 
 // Load a Rom file
@@ -527,6 +534,100 @@ void MainWindow::loadRom(QString romDir, QString romName, QString type, int romS
              mainWindow->resetRomPaths();
              mainWindow->resetRomFileName();
              changesMade = false;
+
+             /* Determine the ROM version */
+             if (BIOSdata[25] == '\x19' ) {
+                 U1MBVersion = "1";
+                 itemBAS2->setHidden(true);
+                 itemBAS3->setHidden(true);
+                 itemBAS4->setHidden(true);
+//                 ui->descBAS1->setHidden(true);
+                 ui->descBAS2->setHidden(true);
+                 ui->descBAS3->setHidden(true);
+                 ui->descBAS4->setHidden(true);
+//                 ui->descBAS1a->setHidden(true);
+                 ui->descBAS2a->setHidden(true);
+                 ui->descBAS3a->setHidden(true);
+                 ui->descBAS4a->setHidden(true);
+                 itemXEGS2->setHidden(true);
+                 itemXEGS3->setHidden(true);
+                 itemXEGS4->setHidden(true);
+//                 ui->descXEGS1->setHidden(true);
+                 ui->descXEGS2->setHidden(true);
+                 ui->descXEGS3->setHidden(true);
+                 ui->descXEGS4->setHidden(true);
+//                 ui->descXEGS1a->setHidden(true);
+                 ui->descXEGS2a->setHidden(true);
+                 ui->descXEGS3a->setHidden(true);
+                 ui->descXEGS4a->setHidden(true);
+
+                 ui->descXEGS1->setGeometry(10, 262, 101, 16);
+                 ui->descXEGS1a->setGeometry(10, 262, 101, 16);
+                 ui->pathXEGS1->setGeometry(120, 262, 101, 16);
+                 ui->pathXEGS1a->setGeometry(120, 262, 101, 16);
+                 ui->descOS1->setGeometry(10, 285, 101, 16);
+                 ui->descOS2->setGeometry(10, 305, 101, 16);
+                 ui->descOS3->setGeometry(10, 325, 101, 16);
+                 ui->descOS4->setGeometry(10, 345, 101, 16);
+                 ui->descOS1a->setGeometry(10, 285, 101, 16);
+                 ui->descOS2a->setGeometry(10, 305, 101, 16);
+                 ui->descOS3a->setGeometry(10, 325, 101, 16);
+                 ui->descOS4a->setGeometry(10, 345, 101, 16);
+                 ui->pathOS1->setGeometry(120, 285, 171, 21);
+                 ui->pathOS2->setGeometry(120, 305, 171, 21);
+                 ui->pathOS3->setGeometry(120, 325, 171, 21);
+                 ui->pathOS4->setGeometry(120, 345, 171, 21);
+                 ui->pathOS1a->setGeometry(120, 285, 171, 21);
+                 ui->pathOS2a->setGeometry(120, 305, 171, 21);
+                 ui->pathOS3a->setGeometry(120, 325, 171, 21);
+                 ui->pathOS4a->setGeometry(120, 345, 171, 21);
+             } else {
+                 U1MBVersion = "2";
+                 itemBAS2->setHidden(false);
+                 itemBAS3->setHidden(false);
+                 itemBAS4->setHidden(false);
+//                 ui->descBAS1->setHidden(false);
+                 ui->descBAS2->setHidden(false);
+                 ui->descBAS3->setHidden(false);
+                 ui->descBAS4->setHidden(false);
+//                 ui->descBAS1a->setHidden(false);
+                 ui->descBAS2a->setHidden(false);
+                 ui->descBAS3a->setHidden(false);
+                 ui->descBAS4a->setHidden(false);
+                 itemXEGS2->setHidden(false);
+                 itemXEGS3->setHidden(false);
+                 itemXEGS4->setHidden(false);
+//                 ui->descXEGS1->setHidden(false);
+                 ui->descXEGS2->setHidden(false);
+                 ui->descXEGS3->setHidden(false);
+                 ui->descXEGS4->setHidden(false);
+//                 ui->descXEGS1a->setHidden(false);
+                 ui->descXEGS2a->setHidden(false);
+                 ui->descXEGS3a->setHidden(false);
+                 ui->descXEGS4a->setHidden(false);
+
+                 ui->descXEGS1->setGeometry(10, 310, 101, 16);
+                 ui->descXEGS1a->setGeometry(10, 310, 101, 16);
+                 ui->pathXEGS1->setGeometry(120, 310, 101, 16);
+                 ui->pathXEGS1a->setGeometry(120, 310, 101, 16);
+                 ui->descOS1->setGeometry(10, 395, 101, 16);
+                 ui->descOS2->setGeometry(10, 415, 101, 16);
+                 ui->descOS3->setGeometry(10, 435, 101, 16);
+                 ui->descOS4->setGeometry(10, 455, 101, 16);
+                 ui->descOS1a->setGeometry(10, 395, 101, 16);
+                 ui->descOS2a->setGeometry(10, 415, 101, 16);
+                 ui->descOS3a->setGeometry(10, 435, 101, 16);
+                 ui->descOS4a->setGeometry(10, 455, 101, 16);
+                 ui->pathOS1->setGeometry(120, 395, 171, 21);
+                 ui->pathOS2->setGeometry(120, 415, 171, 21);
+                 ui->pathOS3->setGeometry(120, 435, 171, 21);
+                 ui->pathOS4->setGeometry(120, 455, 171, 21);
+                 ui->pathOS1a->setGeometry(120, 395, 171, 21);
+                 ui->pathOS2a->setGeometry(120, 415, 171, 21);
+                 ui->pathOS3a->setGeometry(120, 435, 171, 21);
+                 ui->pathOS4a->setGeometry(120, 455, 171, 21);
+             }
+             ui->biosVersion->setText("Ultimate1MB Version " + U1MBVersion + " ROM is loaded");
 
          } else {
              if(type == "SDX") {
